@@ -1,4 +1,4 @@
-@mixin device ($type) {
+@mixin device-type ($type) {
     $mobile: 320px;
     $tablet: 768px;
     $desctop: 1280px;
