@@ -159,7 +159,11 @@ a {
 
 .footer {
   padding-top: 40px;
+  padding-bottom: 4px;
   background-color: #fff5f6;
+}
+.footer__flex {
+  padding-bottom: 40px;
 }
 .footer__wrap-title {
   width: 234px;
@@ -208,7 +212,6 @@ a {
   height: 20px;
 }
 .footer__contact {
-  margin-bottom: 40px;
   font-weight: 700;
   font-size: 12px;
   line-height: 186%;
@@ -221,7 +224,6 @@ a {
 .footer__text {
   border-top: 1px solid #e1e1e1;
   padding-top: 16px;
-  padding-bottom: 4px;
 }
 .footer__copyright {
   font-weight: 700;

@@ -8,7 +8,12 @@
 
 .footer {
   padding-top: 40px;
+  padding-bottom: 4px;
+
   background-color: #fff5f6;
+  &__flex {
+    padding-bottom: 40px;
+  }
   &__wrap-title {
     width: 234px;
   }
@@ -63,8 +68,6 @@
     height: 20px;
   }
   &__contact {
-    margin-bottom: 40px;
-
     font-weight: 700;
     font-size: 12px;
     line-height: 186%;
@@ -79,7 +82,6 @@
     border-top: 1px solid #e1e1e1;
 
     padding-top: 16px;
-    padding-bottom: 4px;
   }
   &__copyright {
     font-weight: 700;
