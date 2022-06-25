@@ -1,0 +1,66 @@
+<div class="overlay overlay-order">
+  <div class="modal">
+    <button class="close-button" type="button">
+      <svg class="close-icon">
+        <use
+          class="cross"
+          href="../images/sprite.svg#icon-burger-close-mob-tab"
+        ></use>
+      </svg>
+    </button>
+    <h2 class="modal__title">Make order</h2>
+    <p class="modal__text">Leave your contacts and we will call you back</p>
+    <form class="modal__form">
+      <label class="modal__label"
+        >Name
+        <input
+          class="modal__input"
+          name="bio"
+          type="text"
+          placeholder="enter your name"
+        />
+      </label>
+
+      <label class="modal__label"
+        >Phone
+        <input
+          class="modal__input"
+          name="tel"
+          type="tel"
+          placeholder="enter your phone"
+        />
+      </label>
+      <button class="modal__button" type="submit">
+        Buy now <span class="modal__symbol">&gt;</span>
+      </button>
+    </form>
+    <picture>
+      <!-- Набір зображень для десктопних екранів -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/Desktop/Header-Hero/slider-pic7-236.png 1x,
+          ./images/Desktop/Header-Hero/slider-pic7-476.png 2x
+        "
+        type="image/png"
+      />
+      <!-- Набір зображень для планшетних екранів -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/Tablet/Header-Hero/slider-pic7-143.png 1x,
+          ./images/Tablet/Header-Hero/slider-pic7-286.png 2x
+        "
+        type="image/png"
+      />
+
+      <img
+        class="modal__image"
+        src="./images/Tablet/Header-Hero/slider-pic7-143.png"
+        alt="Фото с мороженым"
+        width="138"
+        height="138"
+      />
+    </picture>
+  </div>
+</div>
