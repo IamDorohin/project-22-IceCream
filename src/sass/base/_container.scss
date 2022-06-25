@@ -6,7 +6,7 @@
   padding-right: 16px;
 
   @include device(mobile-only) {
-    min-width: 320px;
+    width: calc(100% - 32px);
   }
 
   @include device(mobile) {
