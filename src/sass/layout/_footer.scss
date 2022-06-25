@@ -7,8 +7,8 @@
 }
 
 .footer {
-  padding-top: 40px;
-  padding-bottom: 4px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 
   background-color: #fff5f6;
   &__flex {
@@ -79,6 +79,8 @@
     color: #d41443;
   }
   &__text {
+    background-color: #fff5f6;
+
     border-top: 1px solid #e1e1e1;
 
     padding-top: 16px;
@@ -157,12 +159,11 @@
   }
 
   .footer {
+    padding-top: 60px;
     &__flex {
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
-
-      padding-bottom: 60px;
     }
     &__wrap-title {
       width: 480px;

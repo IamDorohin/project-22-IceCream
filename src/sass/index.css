@@ -158,8 +158,8 @@ a {
 }
 
 .footer {
-  padding-top: 40px;
-  padding-bottom: 4px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   background-color: #fff5f6;
 }
 .footer__flex {
@@ -222,6 +222,7 @@ a {
   color: #d41443;
 }
 .footer__text {
+  background-color: #fff5f6;
   border-top: 1px solid #e1e1e1;
   padding-top: 16px;
 }
@@ -286,11 +287,13 @@ a {
     padding-right: 16px;
   }
 
+  .footer {
+    padding-top: 60px;
+  }
   .footer__flex {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding-bottom: 60px;
   }
   .footer__wrap-title {
     width: 480px;
