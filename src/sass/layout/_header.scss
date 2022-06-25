@@ -1,5 +1,13 @@
+header{
+    background-color: #FFB8CA;
+}
 .header__list{
     @media screen and (max-width: 1199.98px){
+        display: none;
+    }
+}
+.btn-modal-open.tablet-desktop{
+    @media screen and (max-width: 767.98px){
         display: none;
     }
 }
