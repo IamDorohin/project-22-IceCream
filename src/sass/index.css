@@ -241,7 +241,6 @@ a {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding-bottom: 40px;
   }
   .footer__wrap-title {
     width: 340px;
