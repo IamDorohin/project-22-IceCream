@@ -1,0 +1,18 @@
+header{
+    background-color: #FFB8CA;
+}
+.header__list{
+    @include device(not-desktop){
+        display: none;
+    }
+}
+.btn-modal-open.tablet-desktop{
+    @include device(mobile-only){
+        display: none;
+    }
+}
+.burger-menu__btn-open{
+    @include device(desktop){
+        display: none;
+    }
+}
