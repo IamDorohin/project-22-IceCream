@@ -2,12 +2,17 @@ header{
     background-color: #FFB8CA;
 }
 .header__list{
-    @media screen and (max-width: 1199.98px){
+    @include device(not-desktop){
         display: none;
     }
 }
 .btn-modal-open.tablet-desktop{
-    @media screen and (max-width: 767.98px){
+    @include device(mobile-only){
+        display: none;
+    }
+}
+.burger-menu__btn-open{
+    @include device(desktop){
         display: none;
     }
 }
