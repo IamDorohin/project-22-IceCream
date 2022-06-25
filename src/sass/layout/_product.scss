@@ -94,17 +94,20 @@ font-weight: 400;
 .product__ice-cream {
        position: relative;
          background-color: #FFB8CA;
-        text-align: center;
+        display: flex;
+        justify-content: center;
         margin-top: 140px;
-
+ 
+       
          &::before{
                 content: '';
                 position: absolute;
-                display: inline-block;
+                        top: -140px;
+               
                 width: 280px;
                         height: 280px;
                         background-image: url(../images/Mobile/Products/home-pic1-280.png);
-                        top: -140px;
+                        
                         
                        
          }
