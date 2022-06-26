@@ -1,0 +1,50 @@
+.reviews {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container__reviews {
+    padding: 20px;
+}
+
+.reviews-slider {
+    text-align: center;
+
+    &__img {
+        margin: 0 auto;
+    }
+
+    &__inner {
+        padding: 0 50px;
+        margin-top: 32px;
+        background: #fafafa;
+    }
+
+    &__description::before {
+        content: "";
+        background-image: url("../images/Mobile/Customer-Reviews/Quotes-54.png");
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: -1;
+        top: 25px;
+        left: 16px;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    &__description {
+        position: relative;
+        font-family: "DM Sans";
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 3;
+        text-align: center;
+        font-style: normal;
+        color: #000000;
+        z-index: 10;
+
+        white-space: break-spaces;
+        background-image: linear-gradient(to bottom, #fafafa 72px, transparent 0),
+            repeating-linear-gradient(#e1e1e1, #e1e1e1 1px, #fafafa 1px, #fafafa 36px);
+    }
+}
