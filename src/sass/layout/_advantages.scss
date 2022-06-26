@@ -12,6 +12,16 @@
   }
 }
 
+.advantages__container {
+  @media screen and (max-width: 767.98px) {
+    padding: 0 20;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    padding: 0 32;
+  }
+}
+
 .advantages__list {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -41,10 +51,123 @@
   @media screen and (max-width: 767.98px) {
     margin-bottom: 32px;
   }
+}
 
-  //   @media screen and (min-width: 1200px) {
-  //     margin-right: 30px;
-  //   }
+.advantages__subtitle--icon-first::before {
+  content: '';
+  display: block;
+  width: 33px;
+  height: 50px;
+  margin-bottom: 16px;
+
+  background-image: url(/src/images/Mobile/Advantages/Group-33.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/Mobile/Advantages/Group66.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(/src/images/Tablet/Advantages/Group-33.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/Tablet/Advantages/Group-66.png);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages__subtitle--icon-second::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+
+  background-image: url(/src/images/Mobile/Advantages/Vector-50.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/Mobile/Advantages/Vector-100.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(/src/images/Tablet/Advantages/Vector-50.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/Tablet/Advantages/Vector-100.png);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages__subtitle--icon-third::before {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 50px;
+  margin-bottom: 16px;
+
+  background-image: url(/src/images/Mobile/Advantages/Heart-46.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/Mobile/Advantages/Heart-90.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(/src/images/Tablet/Advantages/Heart-46.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/Tablet/Advantages/Heart-90.png);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
 }
 
 .advantages__subtitle {
@@ -58,14 +181,21 @@
   color: $accent-color;
 
   & {
+    @media screen and (max-width: 767.98px) {
+      text-transform: uppercase;
+    }
+  }
+
+  & {
     @media screen and (min-width: 768px) and (max-width: 1199.98px) {
       margin-bottom: 13px;
       font-size: 48px;
+      line-height: 1.15;
     }
 
     @media screen and (min-width: 1200px) {
+      margin-bottom: 16px;
       font-size: 58px;
-      line-height: 1.38;
     }
   }
 }
@@ -75,6 +205,7 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 1.67;
+  letter-spacing: 0.02em;
 
   color: $primary-text-color;
 
