@@ -167,8 +167,6 @@
 }
 
 .cafe__decorate {
-    margin-bottom: 24px;
-
     padding-top: 24px;
     padding-bottom: 24px;
 
@@ -177,6 +175,9 @@
 
     @include device (tablet){
         margin-bottom:32px;
+
+        padding-top: 32px;
+        padding-bottom: 32px;
 
         width: 160px;
     }
