@@ -1,0 +1,349 @@
+.contacts {
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #FFF5F6;
+
+    background-image: linear-gradient(
+        to bottom,
+        #FFFFFF 26%,
+        #FFF5F6 26%);
+
+    @include device (tablet){
+        padding-top: 40px;
+        padding-bottom: 20px;
+
+        background-image: linear-gradient(
+            to bottom,
+            #FFFFFF 44%,
+            #FFF5F6 44%);
+    }
+
+    @include device (desktop){
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        background-image: linear-gradient(
+            to bottom,
+            #FFFFFF 18.4%,
+            #FFF5F6 18.4%);
+    }
+}
+
+.contacts__container {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @include device(tablet){
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.contacts__list{
+    margin-bottom:32px;
+    
+    @include device(tablet){
+        margin-bottom: 60px;
+        @include centred-Flex();
+    }
+}
+
+.cafe {
+    padding-top: 40px;
+    padding-right: 32px;
+    padding-bottom: 40px;
+    padding-left: 32px;
+
+    max-width: 280px;
+
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+    border-radius: 24px;
+
+    background-color: #FFFFFF;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include device(tablet){
+        max-width: 224px;
+        margin-right: 32px;
+
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    @include device(desktop){
+        max-width: 368px;
+        margin-right: 32px;
+
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+.cafe__type {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 80px;
+
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+
+    background-color: #F0D1A5;
+
+    @include device(tablet){
+    margin-bottom:32px;
+
+    font-size: 16px;
+    line-height: 1.86;
+    }
+}
+
+.cafe__type--colored {
+
+    width: 130px;
+
+    background-color: #C2E297;
+
+    @include device(tablet){
+        width: 138px;
+        }
+}
+
+.cafe__location {
+    margin-bottom: 8px;
+
+    color: $primary-text-color;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+
+    @include device(tablet-only){
+        margin-bottom: 12px;
+
+        font-size: 14px;
+        line-height: 1.86;
+        }
+
+    @include device(desktop){
+        font-size: 16px;
+        line-height: 1.86;
+    }
+}
+
+.cafe__description {
+    margin-bottom:24px;
+
+    color: #907E82;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+
+    @include device(tablet){
+        margin-bottom: 32px;
+
+        font-size: 14px;
+        line-height: 1.66;
+        }
+
+    @include device(desktop){
+        font-size: 16px;
+        line-height: 1.83;
+        }
+}
+
+.cafe__decorate {
+    margin-bottom:24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    width: 100%;
+
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+
+    @include device (tablet){
+        margin-bottom:32px;
+
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        // width: 160px;
+    }
+
+    @include device (desktop){
+        // width: 288px;
+    }
+}
+
+.cafe__timetable {
+    margin-bottom: 8px;
+
+    color: $primary-text-color;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+
+    @include device(tablet){
+        margin-bottom:12px;
+
+        font-size: 14px;
+        line-height: 1.86;
+        }
+    @include device(desktop){
+        font-size: 16px;
+    }
+}
+
+.cafe__hours {
+    display: block;
+
+    color: $secondary-accent-color;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+
+    @include device(tablet){
+        font-size: 14px;
+        line-height: 1.86;
+        }
+    
+    @include device(desktop){
+        font-size: 16px;
+        }
+}
+
+.contacts__link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #907E82;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+        color: #D41342;
+    }
+
+    @include device(tablet){
+        font-size: 14px;
+        line-height: 1.83;
+        }
+    @include device(desktop){
+        font-size: 16px;
+    }
+}
+
+.contacts__maps {
+    @include centred-Flex();
+    flex-wrap: wrap;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 161px;
+
+    @include device(tablet){
+        flex-wrap: nowrap;
+        
+        max-width: 380px;
+        
+    }
+
+}
+
+.contacts__location {
+    @extend %btn;
+    @include centred-Flex();
+    
+    margin-bottom: 10px;
+    width: 100%;
+    height: 44px;
+
+    border-radius: 22px;
+
+    background-color: #D41342;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16;
+    line-height: 1.31;
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+        background-color: #FFFFFF;
+        color: #D41342;
+    }
+
+
+    @include device(tablet){
+        margin-bottom:0px;
+        margin-right: 14.5px;
+    }
+}
+
+.contacts__franchise {
+    @extend %btn;
+    @include centred-Flex();
+
+    width: 100%;
+    height: 44px;
+
+    border-radius: 22px;
+
+    background-color: #FFFFFF;
+    color: #D41443;
+    font-weight: 700;
+    font-size: 16;
+    line-height: 1.31;
+
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+        background-color: #D41443;
+        color: #FFFFFF;
+    }
+}
+
+.contacts__arrow{
+    stroke: currentColor; 
+    fill: none;      
+    stroke-linejoin: round; 
+    stroke-linecap: round; 
+    stroke-miterlimit: 4; 
+    stroke-width:6.4; 
+}
