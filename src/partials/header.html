@@ -1,6 +1,8 @@
 <header>
     <div class="container">
+        <!-- Цей блок мій для desktop -->
         <div class="header">
+            <!-- Логотип -->
             <a class="logo" href="./index.html">
                 <img 
                 src="./images/Mobile/Header-Hero/Group-199.png" 
@@ -8,39 +10,47 @@
                 width="199"
                 height="50">
             </a>
-            <nav>
-                <ul class="header__list">
-                    <li class="header__item">
-                        <a class="header__link" href="#">Home</a>
+            <!-- Навігація desktop -->
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">Home</a>
                     </li>
-                    <li class="header__item">
-                        <a class="header__link" href="#">About us</a>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">About us</a>
                     </li>
-                    <li class="header__item">
-                        <a class="header__link" href="">How it's made?</a>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="">How it's made?</a>
                     </li>
-                    <li class="header__item">
-                        <a class="header__link" href="#">Our products</a>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">Our products</a>
                     </li>
-                    <li class="header__item">
-                        <a class="header__link" href="#">Contact</a>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">Contact</a>
                     </li>
                 </ul>
             </nav>
+            <!-- btn для відкриття бургер меню -->
             <button class="burger-menu__btn-open" data-menu-open>
                 <svg class="burger-menu__icon-open" width="14" height="14">
                    <use href="./images/sprite.svg#icon-Burger-mob-tab"></use>
                 </svg>
              </button>
+
+             <!-- btn для відкриття модалки -->
             <button class="btn-modal-open tablet-desktop" type="button" data-modal-open>Buy now</button>
         </div>
+        <!-- burger-menu (Андрій - ти працюєш тільки з 1-ним дівом та кнопкою яка вище (class="burger-menu__btn-open") ) -->
         <div class="burger-menu">
+            <!-- btn для закриття mobile menu -->
             <button class="burger-menu__btn-close" data-menu-close>
                 <svg class="burger-menu__icon-close" width="14" height="14">
                    <use href="./images/sprite.svg#icon-burger-close-mob-tab"></use>
                 </svg>
-             </button>
+            </button>
+            <!-- btn для відкриття модалки -->
             <button class="btn-modal-open" type="button" data-modal-open>Buy now</button>
+            <!-- тут список якірних посилань -->
             <ul class="burger-menu__list">
                 <li class="burger-menu__item">
                     <a class="burger-menu__link" href="#">Home</a>
@@ -59,6 +69,7 @@
                 </li>
             </ul>
         </div>
+        <!-- (Саш, твій div нище) hero для mobile + tablet-->
         <div class="hero">
             <h1 class="hero__title">ice cream made with <span class="hero__text-passion">passion</span></h1>
             <ul class="hero__list-btn">
@@ -71,12 +82,16 @@
             </ul>
             <img class="hero__img-iceCream" src="#" alt="iceCream">
             <div class="hero__background-circle"></div>
-            <!-- Все що нище сховане до tablet -->
+
+            <!-- Все що нище сховане до tablet (+desktop) -->
+            <!-- Молоко + текст -->
             <div class="hero__milk">
                 <img class="hero__img-milk" src="#" alt="milk">
                 <p class="hero__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
             </div>
+            <!-- Фото дівчини -->
             <img class="hero__img-girl" src="#" alt="girl">
+            <!-- Текст про кількість кафе + потрібно через after додати білий круг -->
             <ul class="hero__list-food-establishment">
                 <li class="hero__cafes">
                     <p class="hero__cafes-text"><span class="hero__cafes-number">16</span> cafes</p>
