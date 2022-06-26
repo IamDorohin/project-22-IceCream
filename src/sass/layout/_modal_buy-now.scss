@@ -10,10 +10,13 @@
   justify-content: center;
   align-items: center;
 
-  padding: 20px;
   overflow-y: auto;
 
   background-color: rgba(0, 0, 0, 0.7);
+
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
 
   opacity: 0;
   pointer-events: none;
