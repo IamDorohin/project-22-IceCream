@@ -181,14 +181,21 @@
   color: $accent-color;
 
   & {
+    @media screen and (max-width: 767.98px) {
+      text-transform: uppercase;
+    }
+  }
+
+  & {
     @media screen and (min-width: 768px) and (max-width: 1199.98px) {
       margin-bottom: 13px;
       font-size: 48px;
+      line-height: 1.15;
     }
 
     @media screen and (min-width: 1200px) {
+      margin-bottom: 16px;
       font-size: 58px;
-      line-height: 1.38;
     }
   }
 }
@@ -198,6 +205,7 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 1.67;
+  letter-spacing: 0.02em;
 
   color: $primary-text-color;
 
