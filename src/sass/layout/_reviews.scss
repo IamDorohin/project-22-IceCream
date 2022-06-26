@@ -135,9 +135,6 @@
         border-radius: 0%;
         background-repeat: no-repeat;
 
-        background-image: image-set(
-            "../images/Mobile/Customer-Reviews/vector_13.png" 1x,
-            "../images/Mobile/Customer-Reviews/vector_25.png" 2x
-        );
+        background-image: url("../images/Mobile/Customer-Reviews/vector_13.png");
     }
 }
