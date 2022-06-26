@@ -59,8 +59,6 @@
     padding-left: 32px;
 
     max-width: 280px;
-    margin-left: auto;
-    margin-right: auto;
 
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 
@@ -72,8 +70,13 @@
         margin-bottom: 20px;
     }
 
+    @media screen and (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     @include device(tablet){
-       width: 224px;
+        max-width: 224px;
         margin-right: 32px;
 
         &:not(:last-child) {
@@ -86,7 +89,7 @@
     }
 
     @include device(desktop){
-        width: 368px;
+        max-width: 368px;
         margin-right: 32px;
 
         padding-right: 40px;
@@ -175,6 +178,8 @@
     padding-top: 24px;
     padding-bottom: 24px;
 
+    width: 100%;
+
     border-top: 1px solid #E1E1E1;
     border-bottom: 1px solid #E1E1E1;
 
@@ -184,11 +189,11 @@
         padding-top: 32px;
         padding-bottom: 32px;
 
-        width: 160px;
+        // width: 160px;
     }
 
     @include device (desktop){
-        width: 288px;
+        // width: 288px;
     }
 }
 
