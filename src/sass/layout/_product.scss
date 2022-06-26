@@ -4,7 +4,7 @@ padding-bottom: 60px;
 }
 
 .product-container{
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and  (min-width: 320px) and (max-width: 767px) {
                 padding-left: 20px;
                         padding-right: 20px;
         }
@@ -277,7 +277,7 @@ background-color: #C2E297;
 .product__box{
 border-radius: 24px;
 
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and  (max-width: 479px) {
                 min-width: 280px;
                 
                 margin-right: auto;
@@ -305,7 +305,7 @@ border-radius: 24px;
                 
                 flex-basis: calc((100% - 6 * 8px) / 3);
                         margin: 8px;
-                        // padding-top: 118px;
+                        padding-top: 118px;
                                 padding-right: 32px;
                                 padding-bottom: 40px;
                                 padding-left: 32px;
@@ -317,7 +317,7 @@ border-radius: 24px;
                 
                 flex-basis: calc(100 / 12) * 4;
                 margin: 16px;
-                // padding-top: 165px;
+                padding-top: 165px;
                 padding-right: 64px;
                         padding-bottom: 60px;
                         padding-left: 64px;
@@ -325,7 +325,7 @@ border-radius: 24px;
 }
 
 .product__box-title{
-        
+        position: relative;
 margin-bottom: 70px;
 font-family: 'Titan One' , sans-serif;
         
@@ -337,13 +337,14 @@ font-family: 'Titan One' , sans-serif;
         color: #FFFFFF;
 
         &::after{
-                content: '';
+                content: '...';
                 position: absolute;
                left: 50%;
-                display: block;
-                width: 6px;
-                        height: 6px;
-                        background-image: url(../images/Mobile/Products/Ellipse-6.png);
+                transform: translateX(-50%);  
+                color: #FFFFFF;  
+                bottom: -42;           
+                font-size: 26px;
+                letter-spacing: 0.07em;
         }
         
         
@@ -357,13 +358,13 @@ font-family: 'Titan One' , sans-serif;
           @media screen and (min-width: 768px) and (max-width: 1199px) {
                         font-size: 20px;
                                 line-height: 1.15;
-                                padding-top: 118px;
+                                
                  }
 
              @media screen and (min-width: 1200px) {
                 font-size: 30px;
                  line-height: 1.13;
-                padding-top: 165px;
+               
              }
 }
 
