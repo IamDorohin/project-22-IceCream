@@ -65,12 +65,14 @@ font-weight: 400;
                         font-size: 48px;
                         line-height: 1.14;
                         letter-spacing: 0.04em;
+                        margin-bottom: 158px;
                 }
         
                 @media screen and (min-width: 1200px) {
                         font-size: 58px;
                         line-height: 1.13;
                         letter-spacing: 0.06em;
+                        margin-bottom: 281px;
                 }
 }
 
@@ -93,10 +95,8 @@ font-weight: 400;
 
 .product-ice-cream {
        position: relative;
-         background-color: #FFB8CA;
-        
         margin-top: 140px;
-       
+        background-color: #FFB8CA;
                                  
          }
         
@@ -124,17 +124,157 @@ display: flex;
                                         background-size: contain;
                                          background-image: url(../images/Mobile/Products/home-pic1-560.png)
                                                                                       }
-              }
+              
+                @media screen and (min-width: 768px) and (max-width: 1199px) {
+                        width: 224px;
+                                height: 224px;
+                       
+                        background-image: url(../images/Tablet/Products/home-pic1-224.png);
+
+                        @media (min-device-pixel-ratio: 2),
+                                (min-resolution: 192dpi),
+                                (min-resolution: 2dppx) {
+                                        background-size: contain;
+                                        background-image: url(../images/Tablet/Products/home-pic1-448.png)
+                                }
+                      }
+
+                  @media screen and (min-width: 1200px) {
+                        top: -260px;
+                         width: 368px;
+                     height: 394px;
+                                
+                   background-image: url(../images/Desktop/Products/home-pic1-368.png);
+                
+                        @media (min-device-pixel-ratio: 2),
+                                (min-resolution: 192dpi),
+                                (min-resolution: 2dppx) {
+                                        background-size: contain;
+                                        background-image: url(../images/Desktop/Products/home-pic1-736.png)
+                                }
+                   }
+                }
 }
 
 .product-ice-coffe{
+        position: relative;
+                margin-top: 140px;
         background-color: #F0D1A5;
        
 }
+.product-ice-coffe__position{
+        display: flex;
+        justify-content: center;
+
+        &::before {
+                        content: '';
+                        position: absolute;
+                        top: -140px;
+        
+                        width: 280px;
+                        height: 280px;
+                        background-image: url(../images/Mobile/Products/home-pic-beige-280.png);
+        
+        
+        
+                        @media (min-device-pixel-ratio: 2),
+                        (min-resolution: 192dpi),
+                        (min-resolution: 2dppx) {
+                                background-size: contain;
+                                background-image: url(../images/Mobile/Products/home-pic1beige-560.png)
+                        }
+        
+                        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        
+                                width: 224px;
+                                        height: 224px;
+                                
+                                        background-image: url(../images/Tablet/Products/home-pic2-224.png);
+                                
+                                        @media (min-device-pixel-ratio: 2),
+                                        (min-resolution: 192dpi),
+                                        (min-resolution: 2dppx) {
+                                                background-size: contain;
+                                                background-image: url(../images/Tablet/Products/home-pic2-448.png)
+                                        }
+                        }
+
+                       @media screen and (min-width: 1200px) {
+                        top: -260px;
+                      width: 368px;
+                           height: 394px;
+                        
+                         background-image: url(../images/Desktop/Products/home-pic2-368.png);
+                        
+                            @media (min-device-pixel-ratio: 2),
+                                 (min-resolution: 192dpi),
+                                   (min-resolution: 2dppx) {
+                                  background-size: contain;
+                                 background-image: url(../images/Desktop/Products/home-pic2-736.png)
+                                                         }
+                                                 }
+                }
+}
 
 .product-milk-shakes{
+        position: relative;
+                margin-top: 140px;
         background-color: #C2E297;
        
+}
+
+.product-milk-shakes__position{
+        display: flex;
+        justify-content: center;
+
+        &::before {
+                        content: '';
+                        position: absolute;
+                        top: -140px;
+        
+                        width: 280px;
+                        height: 280px;
+                        background-image: url(../images/Mobile/Products/home-pic1green-280.png);
+        
+        
+        
+                        @media (min-device-pixel-ratio: 2),
+                        (min-resolution: 192dpi),
+                        (min-resolution: 2dppx) {
+                                background-size: contain;
+                                background-image: url(../images/Mobile/Products/home-pic1green-560.png)
+                        }
+        
+                        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        
+                                width: 224px;
+                                        height: 224px;
+                                
+                                        background-image: url(../images/Tablet/Products/home-pic3-224.png);
+                                
+                                        @media (min-device-pixel-ratio: 2),
+                                        (min-resolution: 192dpi),
+                                        (min-resolution: 2dppx) {
+                                                background-size: contain;
+                                                background-image: url(../images/Tablet/Products/home-pic3-448.png)
+                                        }
+                        }
+
+                    @media screen and (min-width: 1200px) {
+                            top: -260px;
+                       width: 368px;
+                        height: 394px;
+                        
+                        background-image: url(../images/Desktop/Products/home-pic3-368.png);
+                        
+                              @media (min-device-pixel-ratio: 2),
+                                 (min-resolution: 192dpi),
+                                  (min-resolution: 2dppx) {
+                                    background-size: contain;
+                             background-image: url(../images/Desktop/Products/home-pic3-736.png)
+                                                         }
+                                                 }
+                }
 }
 
 .product__item{
@@ -142,7 +282,7 @@ border-radius: 24px;
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
                 min-width: 280px;
-                height: 489px;
+                
                 margin-right: auto;
                 margin-left: auto;
                 padding-top: 160px;
@@ -153,7 +293,7 @@ border-radius: 24px;
 
         @media screen and (min-width: 480px) and (max-width: 767px) {
                 max-width: 280px;
-                height: 489px;
+                
                 margin-right: auto;
                 margin-left: auto;
                 padding-top: 160px;
@@ -165,7 +305,7 @@ border-radius: 24px;
         @media screen and (min-width: 768px) and (max-width: 1199px) {
                
                 max-width: 224px;
-                height: 473px;
+                
                 flex-basis: calc((100% - 6 * 8px) / 3);
                         margin: 8px;
                         // padding-top: 118px;
@@ -177,9 +317,12 @@ border-radius: 24px;
         @media screen and (min-width: 1200px) {
                 width: 100%;
                 min-width: 368px;
-                height: 535px;
+                
                 flex-basis: calc(100 / 12) * 4;
                 margin: 16px;
+                padding-right: 64px;
+                        padding-bottom: 60px;
+                        padding-left: 64px;
         }
 }
 
@@ -227,39 +370,14 @@ font-family: 'Titan One' , sans-serif;
 }
 
 .product-ice-cream__text{
-        font-weight: 700;
-                font-size: 14px;
-                line-height: 1.5;
-                
-                text-align: center;
-                letter-spacing: 0.04em;
-        
-                color: #FFFFFF;
-
-                margin-bottom: 32px;
+        @extend %product-text-styles
 }
 .product-ice-coffe__text{
-        font-weight: 700;
-                font-size: 14px;
-                line-height: 1.5;
-        
-                text-align: center;
-                letter-spacing: 0.04em;
-        
-                color: #FFFFFF;
-                margin-bottom: 32px;
+        @extend %product-text-styles
 }
 
 .product-milk-shakes__text{
-font-weight: 700;
-        font-size: 14px;
-        line-height: 1.5;
-
-        text-align: center;
-        letter-spacing: 0.04em;
-
-        color: #FFFFFF;
-        margin-bottom: 32px;
+        @extend %product-text-styles
 }
 
 .product-ice-cream__button{
