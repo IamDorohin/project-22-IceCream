@@ -5,10 +5,6 @@
   padding-left: 16px;
   padding-right: 16px;
 
-  @include device(mobile-only) {
-    min-width: 320px;
-  }
-
   @include device(mobile) {
     width: 480px;
   }
