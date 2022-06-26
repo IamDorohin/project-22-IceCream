@@ -1,7 +1,6 @@
 .hero {
     padding-top:150px;
     padding-bottom:160px;
-    position:relative;
     &__title-Btns {
         position:relative;
         z-index:5;
@@ -41,9 +40,7 @@
         padding: 8px 16px;
         @include animation(background-color);
         @include animation(color);
-        // transition-property: background-color, color;
-        // transition-duration: 250ms;
-        // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
         &--accent {
             color:$secondary-text-color;
             background-color:$accent-color;
@@ -63,17 +60,30 @@
             }
         }
     }
-    &__img-iceCream {
+    &__img-wrapper {
         position:absolute;
         bottom:0;
-        right:22px;
+        right:36px;
         z-index:3;
+       
     }
-    &__img-Circle {
+    &__img-iceCream {
+        position: relative;
+        z-index: 5;
+    }
+    &__img-wrapper::after{
+        content:"";
+        display:block;
+        width:346px;
+        height:344px;
+        border-radius:50%;
+        background-color:#FFA5BA;
         position:absolute;
-        right:-16px;
-        top:38px;
-    }
+        top:40%;
+        left:50%;
+        transform: translate(-50%, -50% );
+        z-index: 1;
+        }
 
     &__milk{
         display:none;
@@ -86,3 +96,17 @@
         @extend %list;
     }
 }
+// .pseudo-element {
+        // &::after{
+        // content:"";
+        // display:block;
+        // width:346px;
+        // height:344px;
+        // border-radius:50%;
+        // background-color:#FFA5BA;
+        // position:absolute;
+        // top:226px;
+        // left:30px;
+        // // z-index:10;
+        // }
+// }
