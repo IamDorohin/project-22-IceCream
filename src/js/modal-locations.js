@@ -1,11 +1,16 @@
 const buttonLocation = document.querySelectorAll('.contacts__location');
+const buttonFranchise = document.querySelectorAll('.contacts__franchise');
 const overlayLocation = document.querySelector('.overlay-location');
 
 buttonLocation.forEach(buttonLocation => {
   buttonLocation.addEventListener('click', () => {
     overlayLocation.classList.add('overlay-active');
-    const order = overlayLocation.querySelector('.modal');
-    order.value = buttonLocation.dataset.order;
+  });
+});
+
+buttonFranchise.forEach(buttonFranchise => {
+  buttonFranchise.addEventListener('click', () => {
+    overlayLocation.classList.add('overlay-active');
   });
 });
 
