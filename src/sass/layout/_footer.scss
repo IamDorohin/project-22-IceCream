@@ -3,7 +3,6 @@
   padding-right: 20px;
 }
 
-// upd
 .footer {
   padding-top: 20px;
 
@@ -12,6 +11,8 @@
     padding-bottom: 40px;
   }
   &__wrap-title {
+    margin-bottom: 40px;
+
     width: 234px;
   }
   &__title {
@@ -25,8 +26,6 @@
     color: #ffa5ba;
   }
   &__title-second {
-    margin-bottom: 40px;
-
     font-family: 'Titan One';
     font-size: 34px;
     line-height: 1.3;
