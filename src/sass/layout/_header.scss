@@ -16,6 +16,9 @@ header{
 }
 .navigation{
     z-index: 3;
+    @include device (desktop){
+        margin-left: 128px;
+    }
 }
 .navigation__list{
     @include device (not-desktop){
@@ -23,7 +26,6 @@ header{
     }
     @include device (desktop){
         display: flex;
-        margin-left: 128px;
     }
 }
 .navigation__item{
