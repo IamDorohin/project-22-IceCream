@@ -82,7 +82,9 @@
         top:18%;
         left:8%;
           @media screen  and (min-width: 767px) {
-            top:11%;
+            width: 335px;
+            height: 333px;
+            top:4%;
             left:32%;
           }
        
@@ -93,12 +95,17 @@
         top: 62%;
         transform: translate(-50%,-50%);
         z-index: 1;
+        @media screen  and (min-width: 767px) {
+            width: 143px;
+            left:44%;
+        }
     }
     &__milk{
         display:none;
                @media screen  and (min-width: 767px) {
                 display:flex;
                 align-items:center;
+                margin-left: 16px;
                }
     }
     &__description {
@@ -157,6 +164,7 @@
         text-transform: uppercase;
         color:$accent-color;
         position:relative;
+        z-index: 2;
     }
     &__img-girl {
         position:absolute;
