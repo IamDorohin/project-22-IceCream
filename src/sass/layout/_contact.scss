@@ -108,6 +108,7 @@
     line-height: 1.83;
     letter-spacing: 0.04em;
 
+    color: $secondary-text-color;
     background-color: #F0D1A5;
 
     @include device(tablet){

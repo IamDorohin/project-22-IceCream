@@ -6,8 +6,6 @@ const overlayOrder = document.querySelector('.overlay-order');
 buttonOrder.forEach(buttonOrder => {
   buttonOrder.addEventListener('click', () => {
     overlayOrder.classList.add('overlay-active');
-    const order = overlayOrder.querySelector('.modal');
-    order.value = buttonOrder.dataset.order;
   });
 });
 
