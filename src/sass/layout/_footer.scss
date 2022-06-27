@@ -1,12 +1,11 @@
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .footer {
   padding-top: 20px;
 
   background-color: #fff5f6;
+  &__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   &__flex {
     padding-bottom: 40px;
   }
