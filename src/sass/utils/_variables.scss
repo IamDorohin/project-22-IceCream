@@ -1,10 +1,15 @@
 // Palette
 $primary-text-color: #000000;
 $secondary-text-color: #ffffff;
-$accent-color: #D41443;
-$secondary-accent-color: #FFA5BA;
-$social-icon-bgc: #FEA5BB;
-$burger-menu-color: #E17992;
+$accent-color: #d41443;
+$secondary-accent-color: #ffa5ba;
+$social-icon-bgc: #fea5bb;
+$burger-menu-color: #e17992;
+$header-background-color: #ffb8ca;
+$white-button-hover: #ecebeb;
+
+// Animation
+$main-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 // Fonts
 $font-color: $primary-text-color;
