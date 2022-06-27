@@ -1,0 +1,96 @@
+.modal__location {
+  padding: 0;
+}
+.location__wrap {
+  padding: 40px;
+}
+.location__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.location__type {
+  text-align: center;
+  width: 80px;
+  letter-spacing: 0.04em;
+  background-color: #f0d1a5;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.83;
+  color: #ffffff;
+  &--colored {
+    text-align: center;
+    width: 130px;
+    letter-spacing: 0.04em;
+    background-color: #c2e297;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.83;
+    color: #ffffff;
+  }
+}
+
+.location__franchise {
+  font-family: 'Titan One', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+
+  margin-top: 6px;
+}
+
+.location__city {
+  color: #000;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.83;
+
+  margin-top: 6px;
+}
+.location__description {
+  color: #907e82;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  margin-top: 6px;
+}
+.location__map {
+  display: block;
+  width: 100%;
+
+  width: 478px;
+  max-width: 100%;
+  height: 300px;
+
+  border-bottom-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .location__wrap {
+    padding: 40px 80px;
+  }
+
+  .location__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .location__item {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+  .location__map {
+    width: 600px;
+    max-width: 100%;
+    height: 300px;
+
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+  }
+}
