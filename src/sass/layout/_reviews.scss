@@ -1,0 +1,140 @@
+.reviews {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container__reviews {
+    padding: 20px;
+
+    @include device(tablet) {
+        padding: 16px;
+    }
+}
+
+.reviews-slider {
+    text-align: center;
+
+    &__img {
+        margin: 0 auto;
+        padding-bottom: 20px;
+
+        @include device(desktop) {
+            padding-bottom: 16px;
+        }
+    }
+
+    &__inner {
+        padding: 0 50px;
+        background-color: #fafafa;
+
+        @include device(tablet) {
+            margin: 0px 58px;
+            padding: 0;
+        }
+
+        @include device(desktop) {
+            margin: 0px 100px;
+        }
+    }
+
+    &__description::before {
+        content: "";
+        background-image: url("../images/Mobile/Customer-Reviews/Quotes-54.png");
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: -1;
+        top: 25px;
+        left: 16px;
+        width: 100vw;
+        height: 100vh;
+
+        @include device(tablet) {
+            top: 19px;
+            left: 12px;
+        }
+
+        @include device(desktop) {
+            top: 32px;
+            left: 72px;
+        }
+    }
+
+    &__description {
+        position: relative;
+        font-family: "DM Sans";
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 3;
+        text-align: center;
+        font-style: normal;
+        color: #000000;
+        z-index: 10;
+
+        white-space: break-spaces;
+        background-image: linear-gradient(to bottom, #fafafa 72px, transparent 0),
+            repeating-linear-gradient(#e1e1e1, #e1e1e1 1px, #fafafa 1px, #fafafa 36px);
+
+        @include device(tablet) {
+            font-size: 14px;
+            line-height: 2.14;
+            letter-spacing: 0.04em;
+
+            padding: 36px 46px 34px 46px;
+            white-space: initial;
+
+            background-image: linear-gradient(to bottom, #fafafa 61px, transparent 0),
+                repeating-linear-gradient(#e1e1e1, #e1e1e1 1px, #fafafa 1px, #fafafa 32px);
+        }
+
+        @include device(desktop) {
+            padding: 47px 109px 39px 109px;
+            white-space: initial;
+
+            font-size: 16px;
+            line-height: 1.87;
+
+            background-image: linear-gradient(to bottom, #fafafa 61px, transparent 0),
+                repeating-linear-gradient(#e1e1e1, #e1e1e1 1px, #fafafa 1px, #fafafa 37px);
+        }
+    }
+
+    &__divider::before {
+        content: "•  •  •";
+        color: #c7133e;
+        text-align: center;
+        white-space: pre;
+    }
+
+    &__text {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+}
+
+.tns-nav {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & [aria-controls] {
+        width: 9px;
+        height: 9px;
+        padding: 0;
+        margin: 0 9px;
+        border-radius: 50%;
+        background: #d9d9d9;
+        border: 0;
+    }
+
+    & &-active {
+        background-color: #ffffff;
+        width: 12px;
+        height: 13px;
+        border: none;
+        border-radius: 0%;
+        background-repeat: no-repeat;
+
+        background-image: url("../images/Mobile/Customer-Reviews/vector_13.png");
+    }
+}
