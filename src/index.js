@@ -1,1 +1,1 @@
-import './js/modal-locations';
+import modalLocation from './js/modal-locations';
