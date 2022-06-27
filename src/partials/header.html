@@ -1,6 +1,8 @@
 <header>
   <div class="container">
+    <!-- Цей блок мій для desktop -->
     <div class="header">
+      <!-- Логотип -->
       <a class="logo" href="./index.html">
         <img
           src="./images/Mobile/Header-Hero/Group-199.png"
@@ -9,30 +11,36 @@
           height="50"
         />
       </a>
-      <!-- <nav>
-        <ul class="header__list">
-          <li class="header__item">
-            <a class="header__link" href="#">Home</a>
+
+      <!-- Навігація desktop -->
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Home</a>
           </li>
-          <li class="header__item">
-            <a class="header__link" href="#">About us</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">About us</a>
           </li>
-          <li class="header__item">
-            <a class="header__link" href="">How it's made?</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">How it's made?</a>
           </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Our products</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Our products</a>
           </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Contact</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Contact</a>
           </li>
         </ul>
       </nav>
+
+      <!-- btn для відкриття бургер меню -->
       <button class="burger-menu__btn-open" data-menu-open>
         <svg class="burger-menu__icon-open" width="14" height="14">
           <use href="./images/sprite.svg#icon-Burger-mob-tab"></use>
         </svg>
       </button>
+
+      <!-- btn для відкриття модалки -->
       <button
         class="btn-modal-open tablet-desktop"
         type="button"
@@ -41,15 +49,32 @@
         Buy now
       </button>
     </div>
-    <div class="burger-menu">
+
+    <!-- burger-menu (Андрій - ти працюєш тільки з 1-ним дівом та кнопкою яка вище (class="burger-menu__btn-open") ) -->
+    <div class="burger-menu visually-hidden">
+      <!-- btn для закриття mobile menu -->
       <button class="burger-menu__btn-close" data-menu-close>
         <svg class="burger-menu__icon-close" width="14" height="14">
           <use href="./images/sprite.svg#icon-burger-close-mob-tab"></use>
         </svg>
       </button>
+
+      <!-- btn для відкриття модалки -->
       <button class="btn-modal-open" type="button" data-modal-open>
-        Buy now
+        <span class="btn-modal-open__text">Buy now</span>
+        <svg
+          class="contacts__arrow"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          width="8"
+          height="14.4"
+          viewBox="0 0 26 32"
+        >
+          <title>Vector-1arrow</title>
+          <path d="M5.173 3.2l14.169 12.8-14.169 12.8"></path>
+        </svg>
       </button>
+      <!-- тут список якірних посилань -->
       <ul class="burger-menu__list">
         <li class="burger-menu__item">
           <a class="burger-menu__link" href="#">Home</a>
@@ -67,8 +92,7 @@
           <a class="burger-menu__link" href="#">Contact</a>
         </li>
       </ul>
-    </div> -->
-
+    </div>
 
     <div class="hero">
       <div class="hero__title-Btns">
@@ -96,16 +120,28 @@
         />
       </div>
       <!-- Все що нище сховане до tablet -->
+
       <div class="hero__milk">
-        <img class="hero__img-milk"
-        srcset="./images/Tablet/Header-Hero/slider-pic5-152.png 1x,
-                ./images/Tablet/Header-Hero/slider-pic5-304.png 2x"
-        src="./images/Tablet/Header-Hero/slider-pic5-152.png" alt="milk" />
+        <img
+          class="hero__img-milk"
+          srcset="
+            ./images/Tablet/Header-Hero/slider-pic5-152.png 1x,
+            ./images/Tablet/Header-Hero/slider-pic5-304.png 2x
+          "
+          src="./images/Tablet/Header-Hero/slider-pic5-152.png"
+          alt="milk"
+        />
+
         <p class="hero__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
       </div>
+
+      <!-- Фото дівчини -->
+      <img class="hero__img-girl" src="#" alt="girl" />
+      <!-- Текст про кількість кафе + потрібно через after додати білий круг -->
+
       <ul class="hero__list-food-establishment">
         <li class="hero__cafes">
           <p class="hero__cafes-text hero__item-text">
@@ -114,15 +150,29 @@
         </li>
         <li class="hero__food-trucks">
           <p class="hero__food-trucks-text hero__item-text">
-            <span class="hero__food-trucks-number hero__item-span">23</span> food trucks
+            <span class="hero__food-trucks-number hero__item-span">23</span>
+            food trucks
           </p>
         </li>
       </ul>
-      <img class="hero__img-girl"
-      srcset="./images/Tablet/Header-Hero/slider-pic4-190.png 1x,
-              ./images/Tablet/Header-Hero/slider-pic4-380.png 2x "
-              src="./images/Tablet/Header-Hero/slider-pic4-190.png" alt="girl" />
+      <<<<<<< HEAD
+      <img
+        class="hero__img-girl"
+        srcset="
+          ./images/Tablet/Header-Hero/slider-pic4-190.png 1x,
+          ./images/Tablet/Header-Hero/slider-pic4-380.png 2x
+        "
+        src="./images/Tablet/Header-Hero/slider-pic4-190.png"
+        alt="girl"
+      />
 
+      =======
+      <img
+        class="hero__img-girl"
+        src="./images/Tablet/Header-Hero/slider-pic4-190.png"
+        alt="girl"
+      />
+      >>>>>>> main
     </div>
   </div>
 </header>
