@@ -1,2 +1,0 @@
-!function(){var c=document.querySelectorAll(".contacts__location"),t=document.querySelectorAll(".contacts__franchise"),e=document.querySelector(".overlay-location");c.forEach((function(c){c.addEventListener("click",(function(){e.classList.add("overlay-active")}))})),t.forEach((function(c){c.addEventListener("click",(function(){e.classList.add("overlay-active")}))})),e.addEventListener("click",(function(c){var t=c.target;(t===e||t.closest(".close-button"))&&e.classList.remove("overlay-active")}))}();
-//# sourceMappingURL=index.edce6f07.js.map

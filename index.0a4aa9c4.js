@@ -1,2 +1,0 @@
-const e=document.querySelectorAll(".contacts__location"),c=document.querySelectorAll(".contacts__franchise"),t=document.querySelector(".overlay-location");e.forEach((e=>{e.addEventListener("click",(()=>{t.classList.add("overlay-active")}))})),c.forEach((e=>{e.addEventListener("click",(()=>{t.classList.add("overlay-active")}))})),t.addEventListener("click",(e=>{const c=e.target;(c===t||c.closest(".close-button"))&&t.classList.remove("overlay-active")}));
-//# sourceMappingURL=index.0a4aa9c4.js.map
