@@ -18,7 +18,7 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 1.83;
-  color: #ffffff;
+  color: $secondary-text-color;
   &--colored {
     text-align: center;
     width: 130px;
@@ -28,7 +28,7 @@
     font-size: 12px;
     font-weight: 500;
     line-height: 1.83;
-    color: #ffffff;
+    color: $secondary-text-color;
   }
 }
 
@@ -42,7 +42,7 @@
 }
 
 .location__city {
-  color: #000;
+  color: $primary-text-color;
   letter-spacing: 0.04em;
   border-radius: 4px;
   font-size: 14px;

@@ -19,8 +19,7 @@
 
   overflow-y: auto;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity $main-animation, visibility $main-animation;
 }
 
 .overlay.overlay-active {
@@ -42,7 +41,7 @@
   background-color: transparent;
   border: none;
   color: $accent-color;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform $main-animation;
 }
 
 .close-button:hover {
@@ -58,13 +57,13 @@
   position: relative;
   padding: 40px 15px;
   width: 480px;
-  background-color: #ffb8ca;
+  background-color: $header-background-color;
   border: 1px solid #646464;
   border-radius: 14px;
 
   color: $accent-color;
   transform: scale(0.8);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform $main-animation;
 }
 
 .modal__title {
@@ -110,8 +109,7 @@
   background-color: #ffffff90;
   border: none;
   border-radius: 6px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color $main-animation, outline $main-animation;
 }
 .modal__input:hover {
   background-color: #ffffff70;
@@ -136,13 +134,12 @@
   background-color: #ffffff;
   border-color: transparent;
   border-radius: 22px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    outline 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color $main-animation, outline $main-animation,
+    color $main-animation;
 }
 
 .modal__button:hover {
-  background-color: #ecebeb;
+  background-color: $white-button-hover;
   color: $accent-color;
 }
 
