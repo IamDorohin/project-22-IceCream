@@ -1,231 +1,227 @@
-.how .container{
-    @include device ("mobile-only"){
-        background-image: url('../images/Desktop/How-its-made/sectionbg.png');
-        background-repeat: no-repeat;
-        background-position: left 0px top 536px;
-        background-size: contain;
+.how .container {
+  @include device('mobile-only') {
+    background-image: url('../images/Desktop/How-its-made/sectionbg.png');
+    background-repeat: no-repeat;
+    background-position: left 0px top 536px;
+    background-size: contain;
 
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-    @include device ("tablet"){
-        padding-left: 32px;
-        padding-right: 32px;
-    }
+  @include device('tablet') {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 
-    @include device ("desktop"){
-        background-image: url('../images/Desktop/How-its-made/sectionbg.png');
-        background-repeat: no-repeat;
-        background-position: left 0px top 142px;
-        background-size: contain;
-    }
+  @include device('desktop') {
+    background-image: url('../images/Desktop/How-its-made/sectionbg.png');
+    background-repeat: no-repeat;
+    background-position: left 0px top 142px;
+    background-size: contain;
+  }
 }
 
-.how__slogan{
-    font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.17;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFA5BA;
+.how__slogan {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
 
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 
-    @include device ("tablet"){
-        font-size: 26px;
-        line-height: 1.15;
-        margin-bottom: 16px;
-    }
-
-    @include device ("desktop"){
-        font-size: 30px;
-        line-height: 1.13;
-    }
-}
-
-.how__title{
-    font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
+  @include device('tablet') {
+    font-size: 26px;
     line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #D41443;
+    margin-bottom: 16px;
+  }
 
-    margin-bottom: 32px;
-
-       
-    @include device ("mobile-only"){
-        width: 200px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    @include device ("tablet"){
-        font-size: 48px;
-        line-height: 1.15;
-
-        margin-bottom: 40px;
-    }
-
-    @include device ("desktop"){
-        font-size: 58px;
-        line-height: 1.14;
-        letter-spacing: 0.06em;
-
-        margin-bottom: 60px;
-    }
+  @include device('desktop') {
+    font-size: 30px;
+    line-height: 1.13;
+  }
 }
 
-.how{
-    background-color: #FFF5F6;
-    padding-bottom: 20px;
-    padding-top: 60px;
+.how__title {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
 
-    @include device ("tablet"){
-        padding-bottom: 30px;
-    }
-}
+  margin-bottom: 32px;
 
-.how__pic{
+  @include device('mobile-only') {
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @include device('tablet') {
+    font-size: 48px;
+    line-height: 1.15;
+
     margin-bottom: 40px;
+  }
 
-    @include device ("tablet"){
-        padding-bottom: 0px;
-        margin-bottom: 0px;
-        margin-right: 32px;    
-        max-height: 100%; 
+  @include device('desktop') {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
 
-        width: calc((100% - 32px) / 2);
-    }
+    margin-bottom: 60px;
+  }
 }
 
-p{
-    margin-bottom: 1em;
-    margin-left: 0;
+.how {
+  background-color: #fff5f6;
+  padding-bottom: 20px;
+  padding-top: 60px;
+
+  @include device('tablet') {
+    padding-bottom: 30px;
+  }
 }
 
-.how__text{
-    margin-right: 60px;
+.how__pic {
+  margin-bottom: 40px;
 
-    @include device ("tablet"){
-        margin-right: 2px;
-    }
+  @include device('tablet') {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-right: 32px;
+    max-height: 100%;
 
-    @include device ("desktop"){
+    width: calc((100% - 32px) / 2);
+  }
+}
+
+p {
+  margin-bottom: 1em;
+  margin-left: 0;
+}
+
+.how__text {
+  margin-right: 60px;
+
+  @include device('tablet') {
+    margin-right: 2px;
+  }
+
+  @include device('desktop') {
     margin-right: 105px;
-    }
-
+  }
 }
 
-.how__primary-text{
-    font-family: 'DM Sans';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.58;
-    color: #000000;
-    margin-bottom: 26px;
+.how__primary-text {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: #000000;
+  margin-bottom: 26px;
 
+  position: relative;
 
-    position: relative;
+  @include device('tablet') {
+    margin-bottom: 21px;
 
-    @include device ("tablet"){
-        margin-bottom: 21px; 
+    font-size: 14px;
+    line-height: 1.76;
+  }
 
-        font-size: 14px;
-        line-height: 1.76;  
-    }
-
-    @include device ("desktop"){
-        font-size: 16px;
-        letter-spacing: 0.04em;
-    }
+  @include device('desktop') {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
 }
 
 .how__secondary-text,
-.how__third-text{
-    font-family: 'DM Sans';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.62;
-    color: #907E82;
+.how__third-text {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: #907e82;
 
+  @include device('tablet') {
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
 
-    @include device ("tablet"){
-        font-size: 14px;
-        line-height: 1.76;
-        letter-spacing: 0.04em;  
-    }
-
-    @include device ("desktop"){
-        font-size: 14px;
-        line-height: 1.94;
-    }
+  @include device('desktop') {
+    font-size: 14px;
+    line-height: 1.94;
+  }
 }
 
-.how__third-text{
-    margin-bottom: 20px;
-    
-    @include device ("tablet"){
-    margin-bottom: 40px;
-    }
+.how__third-text {
+  margin-bottom: 20px;
 
+  @include device('tablet') {
+    margin-bottom: 40px;
+  }
 }
 
 .how__button {
-    @extend %btn;
+  @extend %btn;
 
-    position: relative;
-    
-    width: 176px;
-    height: 44px;
+  position: relative;
 
-    border-radius: 22px;
+  width: 176px;
+  height: 44px;
 
-    background-color: #FFFFFF ;
-    color: #D41443;
-    font-weight: 700;
-    font-size: 14px;
+  border-radius: 22px;
+
+  background-color: #ffffff;
+  color: #d41443;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.3;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    color: #d41443;
+  }
+
+  @include device('tablet') {
+    font-size: 16px;
     line-height: 1.3;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: background-color  250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover, &:focus {
-        background-color: #ECEBEB;
-        color: #D41443;
-    }
-
-    @include device ("tablet"){
-        font-size: 16px;
-        line-height: 1.3;
-    }
+  }
 }
 
 .how__button::after {
-    content: '';
+  content: '';
 
-    position: absolute;
-    bottom: 16px;
-    left: 140px;
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-image: url('../images/vector.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
+  position: absolute;
+  bottom: 16px;
+  left: 140px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-image: url('../images/Vector.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.how__flex{
-    @include device ("tablet"){
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 2px;
-    }
+.how__flex {
+  @include device('tablet') {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2px;
+  }
 }
