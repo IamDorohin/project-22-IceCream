@@ -208,12 +208,17 @@ p{
 }
 
 .how__button::after {
-    content: url('../images/vector.svg');
+    content: '';
 
     position: absolute;
-    bottom: 11px;
-    left: 138px;
+    bottom: 16px;
+    left: 137px;
     display: inline-block;
+    width: 4.43px;
+    height: 8px;
+    background-image: url('../images/vector.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .how__flex{
