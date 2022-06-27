@@ -13,10 +13,6 @@
         position:relative;
         height: auto;
         z-index:5;
-@media screen  and (min-width: 767px) {
-    z-index: 0;
-}
-
     }
     &__title {
         width:218px;
@@ -40,7 +36,6 @@
             letter-spacing: 0.04em;
             margin-bottom: 24px;
         }
-
     }
     &__text-passion {
         color:$accent-color;
@@ -54,16 +49,20 @@
     }
     &__list-btn{
         @extend %list;
+        position:static;
         display: flex;
     }
     &__item {
         &:not(:last-child) {
             margin-right:8px;
+        @media screen  and (min-width: 1199px) {
+            margin-right: 12px;
+        }
+
         }
     }
     &__link {
         @extend %btn;
-        // display: block;
         border-radius: 20px;
         font-size: 8px;
         line-height: 10px;
