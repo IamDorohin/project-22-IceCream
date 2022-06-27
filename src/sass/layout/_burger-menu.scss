@@ -52,6 +52,9 @@
     @include device(tablet-only) {
         min-width: 186px;
     }
+.btn-modal-open__text {
+    margin-right: 17px;
+}
 
     @include device(not-desktop) {
         display: flex;
