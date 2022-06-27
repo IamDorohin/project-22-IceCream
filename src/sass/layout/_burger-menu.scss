@@ -8,6 +8,10 @@
     padding-top: 60px;
     padding-left: 20px;
     padding-right: 20px;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+    z-index: 999;
     @include device(desktop) {
         display: none;
     }
@@ -15,7 +19,9 @@
         width: 254px;
     }
 }
-
+.burger-menu.is-open{
+    transform: translateX(0);
+}
 .burger-menu__btn-close {
     position: absolute;
     top: 20px;
