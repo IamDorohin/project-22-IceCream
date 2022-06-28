@@ -58,14 +58,14 @@
     <!-- burger-menu (Андрій - ти працюєш тільки з 1-ним дівом та кнопкою яка вище (class="burger-menu__btn-open") ) -->
     <div class="burger-menu js-menu-container" id="burger-menu">
       <!-- btn для закриття mobile menu -->
-      <button class="burger-menu__btn-close js-close-menu" data-menu-close>
+      <button class="burger-menu__btn-close js-close-menu">
         <svg class="burger-menu__icon-close" width="14" height="14">
           <use href="./images/sprite.svg#icon-burger-close-mob-tab"></use>
         </svg>
       </button>
 
       <!-- btn для відкриття модалки -->
-      <button class="btn-modal-open" type="button" data-modal-open>
+      <button class="btn-modal-open js-close" type="button">
         <span class="btn-modal-open__text">Buy now</span>
         <svg
           class="contacts__arrow"
@@ -81,8 +81,8 @@
       </button>
       <!-- тут список якірних посилань -->
       <ul class="burger-menu__list">
-        <li class="burger-menu__item">
-          <a class="burger-menu__link" href="#">Home</a>
+        <li class="burger-menu__item ">
+          <a class="burger-menu__link " href="#">Home</a>
         </li>
         <li class="burger-menu__item">
           <a class="burger-menu__link" href="#about-us">About us</a>
