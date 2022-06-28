@@ -43,6 +43,7 @@ header{
     }
 }
 .btn-modal-open.tablet-desktop{
+    position: relative;
     @include device (mobile-only){
         display: none;
     }
@@ -54,6 +55,19 @@ header{
         margin-left: 140px;
     }
 }
+.btn-modal-open.tablet-desktop::after {
+    content: '';
+    position: absolute;
+    bottom: 16px;
+    left: 125px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url('../images/Vector.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
 .burger-menu__btn-open{
     margin-left: auto;
     padding: 0px;
