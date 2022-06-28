@@ -104,11 +104,6 @@
   }
 }
 
-p {
-  margin-bottom: 1em;
-  margin-left: 0;
-}
-
 .how__text {
   margin-right: 60px;
 
@@ -128,6 +123,7 @@ p {
   line-height: 1.58;
   color: #000000;
   margin-bottom: 26px;
+  margin-left: 0;
 
   position: relative;
 
@@ -151,7 +147,10 @@ p {
   font-size: 12px;
   line-height: 1.62;
   color: #907e82;
+  margin-bottom: 1em;
+  margin-left: 0;
 
+  
   @include device('tablet') {
     font-size: 14px;
     line-height: 1.76;
