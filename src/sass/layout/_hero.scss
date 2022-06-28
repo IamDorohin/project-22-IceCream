@@ -71,17 +71,16 @@
             background-color:$accent-color;
             &:hover,
             &:focus {
-                color:$accent-color;
-                background-color:$secondary-text-color;
+                background-color:$crimson-button-hover;
             }
         }
         &--base {
             color:$accent-color;
             background-color: $secondary-text-color;
+
             &:hover,
             &:focus {
-                color:$secondary-text-color;
-                background-color:$accent-color;
+                background-color: $white-button-hover;
             }
         }
         @media screen  and (min-width: 1199px) {
