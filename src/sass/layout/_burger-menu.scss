@@ -8,6 +8,10 @@
     padding-top: 60px;
     padding-left: 20px;
     padding-right: 20px;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+    z-index: 999;
     @include device(desktop) {
         display: none;
     }
@@ -15,7 +19,9 @@
         width: 254px;
     }
 }
-
+.burger-menu.is-open{
+    transform: translateX(0);
+}
 .burger-menu__btn-close {
     position: absolute;
     top: 20px;
@@ -25,13 +31,15 @@
     outline: none;
     background-color: transparent;
     cursor: pointer;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus .burger-menu__icon-close{
-        fill: $accent-color;
+        color: $accent-color;
     }
 }
-
+.burger-menu__icon-close {
+    color: $secondary-text-color;
+}
 .btn-modal-open {
     min-width: 209px;
     min-height: 44px;
@@ -44,13 +52,18 @@
     font-weight: 700;
     color: $accent-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include device(tablet-only) {
         min-width: 186px;
     }
+.btn-modal-open__text {
+    margin-right: 17px;
+}
 
     @include device(not-desktop) {
-        display: block;
+        display: flex;
         margin-left: auto;
         margin-right: auto;
     }

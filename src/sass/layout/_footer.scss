@@ -1,12 +1,11 @@
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .footer {
   padding-top: 20px;
 
   background-color: #fff5f6;
+  &__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   &__flex {
     padding-bottom: 40px;
   }
@@ -93,12 +92,11 @@
 
 //! Адаптив
 @media screen and (min-width: 768px) {
-  .container {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
   .footer {
+    &__container {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
     &__flex {
       display: flex;
       align-items: flex-end;
@@ -141,19 +139,22 @@
     &__copyright {
       line-height: 186%;
       letter-spacing: 0.02em;
+      &-second {
+        margin-left: 6px;
+      }
     }
   }
 }
 
 //! Адаптив
 @media screen and (min-width: 1200px) {
-  .container {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
   .footer {
     padding-top: 60px;
+    &__container {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
     &__flex {
       display: flex;
       align-items: flex-end;
