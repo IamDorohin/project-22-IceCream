@@ -1,11 +1,12 @@
 header{
     background-color: #FFB8CA;
-    position:relative;
     overflow: hidden;
 }
 .header{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    
     padding-top: 8px;
     @include device (tablet){
         padding-top: 32px;
