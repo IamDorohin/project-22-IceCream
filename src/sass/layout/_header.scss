@@ -14,6 +14,9 @@ header{
         padding-top: 37px;
     }
 }
+.navigation{
+    z-index: 3;
+}
 .navigation__list{
     @include device (not-desktop){
         display: none;
