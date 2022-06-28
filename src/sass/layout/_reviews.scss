@@ -1,18 +1,6 @@
 .reviews {
     padding-top: 30px;
     padding-bottom: 30px;
-}
-
-.container__reviews {
-    padding: 20px;
-
-    @include device(tablet) {
-        padding: 16px;
-    }
-}
-
-.reviews-slider {
-    text-align: center;
 
     &__caption--visually-hidden {
         position: absolute;
@@ -26,6 +14,18 @@
         clip: rect(0 0 0 0);
         overflow: hidden;
     }
+}
+
+.container__reviews {
+    padding: 20px;
+
+    @include device(tablet) {
+        padding: 16px;
+    }
+}
+
+.reviews-slider {
+    text-align: center;
 
     &__img {
         margin: 0 auto;
