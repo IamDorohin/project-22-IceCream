@@ -102,17 +102,18 @@
 
     width: calc((100% - 32px) / 2);
   }
+
+  @include device('desktop') {
+    margin-right: 99px;
+  }
 }
 
 .how__text {
-  margin-right: 60px;
-
-  @include device('tablet') {
-    margin-right: 2px;
-  }
+  width: 100%;
+  padding-right: 60px;
 
   @include device('desktop') {
-    margin-right: 105px;
+    padding-right: 62px;
   }
 }
 

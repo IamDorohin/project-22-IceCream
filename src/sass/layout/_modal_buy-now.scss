@@ -57,6 +57,7 @@
   position: relative;
   padding: 40px 15px;
   width: 480px;
+
   background-color: $header-background-color;
   border: 1px solid #646464;
   border-radius: 14px;
@@ -64,6 +65,14 @@
   color: $accent-color;
   transform: scale(0.8);
   transition: transform $main-animation;
+
+  @media screen and (max-width:477px) {
+    width: 300px;
+  }
+
+  @media screen and (min-width: 478px) and (max-width:767px) {
+    width: 370px;
+  }
 }
 
 .modal__title {
