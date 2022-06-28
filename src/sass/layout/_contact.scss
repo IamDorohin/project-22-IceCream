@@ -9,8 +9,8 @@
 
     background-image: linear-gradient(
         to bottom,
-        #FFFFFF 26%,
-        #FFF5F6 26%);
+        #FFFFFF 23%,
+        #FFF5F6 23%);
 
     @include device (tablet){
         padding-top: 40px;
@@ -18,8 +18,8 @@
 
         background-image: linear-gradient(
             to bottom,
-            #FFFFFF 44%,
-            #FFF5F6 44%);
+            #FFFFFF 50%,
+            #FFF5F6 50%);
     }
 
     @include device (desktop){
@@ -28,8 +28,8 @@
 
         background-image: linear-gradient(
             to bottom,
-            #FFFFFF 18.4%,
-            #FFF5F6 18.4%);
+            #FFFFFF 20%,
+            #FFF5F6 20%);
     }
 }
 
