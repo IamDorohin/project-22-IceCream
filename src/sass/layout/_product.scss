@@ -21,12 +21,15 @@ padding-bottom: 60px;
 }
 
 .product__text{
-    font-family: 'Titan One' , sans-serif;
-                font-weight: 400;
+        font-family: 'Titan One' , sans-serif;
+        font-weight: 400;
         
         text-align: center;
         text-transform: uppercase;
-            color: #FFA5BA;
+        
+        margin-bottom: 15px;
+
+        color: #FFA5BA;
 
         @media screen  and (max-width: 767px) {
                         font-size: 18px;
@@ -37,11 +40,16 @@ padding-bottom: 60px;
         @media screen and (min-width: 768px) and (max-width: 1199px) {
                 font-size: 26px;
                 line-height: 1.15;
+
+                margin-bottom: 18px;
+
         }
                 @media screen and (min-width: 1200px) {
                         font-size: 30px;
                         line-height: 1.13;
                         letter-spacing: 0.04em;
+
+                        margin-bottom: 16px;
                 }
 }
 
@@ -102,7 +110,7 @@ transition: transform 500ms ease-in-out;
                         margin-bottom: -140px;
                         width: 280px;
                         height: 280px;
-                        background-image: url(../images/Mobile/Products/home-pic1-280.png);
+                        background-image: url(../images/mobile/products/home-pic1-280.png);
         
         
         
@@ -110,7 +118,7 @@ transition: transform 500ms ease-in-out;
                         (min-resolution: 192dpi),
                         (min-resolution: 2dppx) {
                                 background-size: contain;
-                                background-image: url(../images/Mobile/Products/home-pic1-560.png)
+                                background-image: url(../images/mobile/products/home-pic1-560.png)
                         }
         
                         @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -118,13 +126,13 @@ transition: transform 500ms ease-in-out;
                                 width: 224px;
                                 height: 224px;
         
-                                background-image: url(../images/Tablet/Products/home-pic1-224.png);
+                                background-image: url(../images/tablet/products/home-pic1-224.png);
         
                                 @media (min-device-pixel-ratio: 2),
                                 (min-resolution: 192dpi),
                                 (min-resolution: 2dppx) {
                                         background-size: contain;
-                                        background-image: url(../images/Tablet/Products/home-pic1-448.png)
+                                        background-image: url(../images/tablet/products/home-pic1-448.png)
                                 }
                         }
         
@@ -133,13 +141,13 @@ transition: transform 500ms ease-in-out;
                                 width: 368px;
                                 height: 394px;
         
-                                background-image: url(../images/Desktop/Products/home-pic1-368.png);
+                                background-image: url(../images/desktop/products/home-pic1-368.png);
         
                                 @media (min-device-pixel-ratio: 2),
                                 (min-resolution: 192dpi),
                                 (min-resolution: 2dppx) {
                                         background-size: contain;
-                                        background-image: url(../images/Desktop/Products/home-pic1-736.png)
+                                        background-image: url(../images/desktop/products/home-pic1-736.png)
                                 }
                         }
                 }
@@ -161,14 +169,14 @@ transition: transform 500ms ease-in-out;
                         display: inline-block;
                         width: 280px;
                         height: 280px;
-                        background-image: url(../images/Mobile/Products/home-pic-beige-280.png);
+                        background-image: url(../images/mobile/products/home-pic-beige-280.png);
         
             
                         @media (min-device-pixel-ratio: 2),
                         (min-resolution: 192dpi),
                         (min-resolution: 2dppx) {
                                 background-size: contain;
-                                background-image: url(../images/Mobile/Products/home-pic1beige-560.png)
+                                background-image: url(../images/mobile/products/home-pic1beige-560.png)
                         }
         
                         @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -176,13 +184,13 @@ transition: transform 500ms ease-in-out;
                                 width: 224px;
                                 height: 224px;
         
-                                background-image: url(../images/Tablet/Products/home-pic2-224.png);
+                                background-image: url(../images/tablet/products/home-pic2-224.png);
         
                                 @media (min-device-pixel-ratio: 2),
                                 (min-resolution: 192dpi),
                                 (min-resolution: 2dppx) {
                                         background-size: contain;
-                                        background-image: url(../images/Tablet/Products/home-pic2-448.png)
+                                        background-image: url(../images/tablet/products/home-pic2-448.png)
                                 }
                         }
         
@@ -191,13 +199,13 @@ transition: transform 500ms ease-in-out;
                                 width: 368px;
                                 height: 394px;
         
-                                background-image: url(../images/Desktop/Products/home-pic2-368.png);
+                                background-image: url(../images/desktop/products/home-pic2-368.png);
         
                                 @media (min-device-pixel-ratio: 2),
                                 (min-resolution: 192dpi),
                                 (min-resolution: 2dppx) {
                                         background-size: contain;
-                                        background-image: url(../images/Desktop/Products/home-pic2-736.png)
+                                        background-image: url(../images/desktop/products/home-pic2-736.png)
                                 }
                         }
                 }   
@@ -219,14 +227,14 @@ transition: transform 500ms ease-in-out;
                         margin-bottom: -140px;
                         width: 280px;
                         height: 280px;
-                        background-image: url(../images/Mobile/Products/home-pic1green-280.png);
+                        background-image: url(../images/mobile/products/home-pic1green-280.png);
         
         
                         @media (min-device-pixel-ratio: 2),
                         (min-resolution: 192dpi),
                         (min-resolution: 2dppx) {
                                 background-size: contain;
-                                background-image: url(../images/Mobile/Products/home-pic1green-560.png)
+                                background-image: url(../images/mobile/products/home-pic1green-560.png)
                         }
         
                         @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -234,13 +242,13 @@ transition: transform 500ms ease-in-out;
                                 width: 224px;
                                 height: 224px;
         
-                                background-image: url(../images/Tablet/Products/home-pic3-224.png);
+                                background-image: url(../images/tablet/products/home-pic3-224.png);
         
                                 @media (min-device-pixel-ratio: 2),
                                 (min-resolution: 192dpi),
                                 (min-resolution: 2dppx) {
                                         background-size: contain;
-                                        background-image: url(../images/Tablet/Products/home-pic3-448.png)
+                                        background-image: url(../images/tablet/products/home-pic3-448.png)
                                 }
                         }
         
@@ -249,13 +257,13 @@ transition: transform 500ms ease-in-out;
                                 width: 368px;
                                 height: 394px;
         
-                                background-image: url(../images/Desktop/Products/home-pic3-368.png);
+                                background-image: url(../images/desktop/products/home-pic3-368.png);
         
                                 @media (min-device-pixel-ratio: 2),
                                 (min-resolution: 192dpi),
                                 (min-resolution: 2dppx) {
                                         background-size: contain;
-                                        background-image: url(../images/Desktop/Products/home-pic3-736.png)
+                                        background-image: url(../images/desktop/products/home-pic3-736.png)
                                 }
                         }
                 }
@@ -371,6 +379,7 @@ font-family: 'Titan One' , sans-serif;
 }
 
 .product-ice-cream__button{
+
         @extend %product-button-styles
 }
 
@@ -558,5 +567,10 @@ font-family: 'Titan One' , sans-serif;
                                
               
         }
+
+
+
+
+       
 
 

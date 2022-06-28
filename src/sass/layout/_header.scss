@@ -1,11 +1,12 @@
 header{
     background-color: #FFB8CA;
-    position:relative;
     overflow: hidden;
 }
 .header{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    
     padding-top: 8px;
     @include device (tablet){
         padding-top: 32px;
@@ -16,6 +17,9 @@ header{
 }
 .navigation{
     z-index: 3;
+    @include device (desktop){
+        margin-left: 128px;
+    }
 }
 .navigation__list{
     @include device (not-desktop){
@@ -23,7 +27,6 @@ header{
     }
     @include device (desktop){
         display: flex;
-        margin-left: 128px;
     }
 }
 .navigation__item{
@@ -41,6 +44,7 @@ header{
     }
 }
 .btn-modal-open.tablet-desktop{
+    position: relative;
     @include device (mobile-only){
         display: none;
     }
@@ -52,6 +56,19 @@ header{
         margin-left: 140px;
     }
 }
+.btn-modal-open.tablet-desktop::after {
+    content: '';
+    position: absolute;
+    bottom: 16px;
+    left: 125px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url('../images/vector.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
 .burger-menu__btn-open{
     margin-left: auto;
     padding: 0px;

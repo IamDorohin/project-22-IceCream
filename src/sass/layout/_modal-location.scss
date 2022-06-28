@@ -1,6 +1,7 @@
 .modal__location {
   padding: 0;
 }
+
 .location__wrap {
   padding: 40px;
 }
@@ -48,17 +49,14 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 1.83;
-
-  margin-top: 6px;
 }
 .location__description {
   color: #907e82;
   font-size: 12px;
   font-weight: 500;
   line-height: 1.5;
-
-  margin-top: 6px;
 }
+
 .location__map {
   display: block;
   width: 100%;
@@ -86,6 +84,18 @@
     &:not(:last-child) {
       margin-bottom: 0;
     }
+  }
+  .location__type {
+    font-size: 16px;
+    line-height: 1.86;
+    &--colored {
+      font-size: 16px;
+      line-height: 1.86;
+    }
+  }
+  .location__city {
+    font-size: 15px;
+    line-height: 1.86;
   }
   .location__map {
     width: 600px;

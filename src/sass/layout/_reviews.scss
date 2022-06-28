@@ -39,12 +39,12 @@
 
     &__description::before {
         content: "";
-        background-image: url("../images/Mobile/Customer-Reviews/Quotes-54.png");
+        background-image: url("../images/mobile/customer-reviews/quotes-54.png");
         background-repeat: no-repeat;
         position: absolute;
         z-index: -1;
-        top: 25px;
-        left: 16px;
+        top: 30px;
+        left: -1px;
         width: 100vw;
         height: 100vh;
 
@@ -73,6 +73,8 @@
         white-space: break-spaces;
         background-image: linear-gradient(to bottom, #fafafa 72px, transparent 0),
             repeating-linear-gradient(#e1e1e1, #e1e1e1 1px, #fafafa 1px, #fafafa 36px);
+
+            padding: 43px 10px 17px 10px;
 
         @include device(tablet) {
             font-size: 14px;
@@ -135,6 +137,6 @@
         border-radius: 0%;
         background-repeat: no-repeat;
 
-        background-image: url("../images/Mobile/Customer-Reviews/vector_13.png");
+        background-image: url("../images/mobile/customer-reviews/vector_13.png");
     }
 }

@@ -9,8 +9,8 @@
 
     background-image: linear-gradient(
         to bottom,
-        #FFFFFF 26%,
-        #FFF5F6 26%);
+        #FFFFFF 23%,
+        #FFF5F6 23%);
 
     @include device (tablet){
         padding-top: 40px;
@@ -18,8 +18,8 @@
 
         background-image: linear-gradient(
             to bottom,
-            #FFFFFF 44%,
-            #FFF5F6 44%);
+            #FFFFFF 50%,
+            #FFF5F6 50%);
     }
 
     @include device (desktop){
@@ -28,8 +28,8 @@
 
         background-image: linear-gradient(
             to bottom,
-            #FFFFFF 18.4%,
-            #FFF5F6 18.4%);
+            #FFFFFF 20%,
+            #FFF5F6 20%);
     }
 }
 
@@ -189,12 +189,6 @@
 
         padding-top: 32px;
         padding-bottom: 32px;
-
-        // width: 160px;
-    }
-
-    @include device (desktop){
-        // width: 288px;
     }
 }
 
@@ -248,18 +242,18 @@
     line-height: 1.5;
     color: #907E82;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include animation(color);
+
 
     &:hover, &:focus {
-        color: #D41342;
+        color: $accent-color;
     }
 
     @include device(tablet){
         font-size: 14px;
         line-height: 1.83;
         }
+
     @include device(desktop){
         font-size: 16px;
     }
@@ -300,15 +294,11 @@
     font-size: 16;
     line-height: 1.31;
 
-    transition-property: color, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include animation(color);
 
     &:hover, &:focus {
-        background-color: #FFFFFF;
-        color: #D41342;
+        background-color: $crimson-button-hover;
     }
-
 
     @include device(tablet){
         margin-bottom:0px;
@@ -332,13 +322,10 @@
     font-size: 16;
     line-height: 1.31;
 
-    transition-property: background-color, color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include animation(background-color);
 
     &:hover, &:focus {
-        background-color: #D41443;
-        color: #FFFFFF;
+        background-color: $white-button-hover;
     }
 }
 

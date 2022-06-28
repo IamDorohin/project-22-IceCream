@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>IceCream</title>
+    <link rel="shortcut icon" type="image/ico" href="./images/favicon.ico"/>
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
       rel="stylesheet"
@@ -17,19 +18,34 @@
       ]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script
     ><![endif]-->
     <script type="module" src="./index.js"></script>
+
+    <!--! Карты -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
 
     <include src="./partials/header.html"></include>
-    <include src="./partials/product.html"></include>
-    <include src="./partials/how-its-made.html"></include>
-    <include src="./partials/advantages.html"></include>
-    <include src="./partials/gallery.html"></include>
-    <include src="./partials/reviews.html"></include>
-    <include src="./partials/modal_buy-now.html"></include>
-    <include src="./partials/contact.html"></include>
-    <include src="./partials/modal_location.html"></include>
+    <main>
+      <include src="./partials/product.html"></include>
+      <include src="./partials/how-its-made.html"></include>
+      <include src="./partials/advantages.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/reviews.html"></include>
+      <include src="./partials/modal_buy-now.html"></include>
+      <include src="./partials/contact.html"></include>
+      <include src="./partials/modal_location.html"></include>
+    </main>
     <include src="./partials/footer.html"></include>
   </body>
 </html>

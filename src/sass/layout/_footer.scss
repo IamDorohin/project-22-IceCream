@@ -53,15 +53,18 @@
     background-color: #fea5bb;
     fill: white;
 
-    transition: background-color 300ms ease-in-out;
-    &:hover {
-      background-color: #d41443;
+    @include animation(background-color);
+
+    &:hover, &:focus {
+      background-color: $accent-color;
     }
   }
+
   &__icon {
     width: 20px;
     height: 20px;
   }
+
   &__contact {
     font-weight: 700;
     font-size: 12px;
@@ -70,9 +73,16 @@
 
     color: #000000;
   }
+
   &__tel {
     color: #d41443;
+    @include animation(color);
+
+    &:hover, &:focus {
+      color: $crimson-button-hover;
+    }
   }
+
   &__text {
     background-color: #fff5f6;
 
