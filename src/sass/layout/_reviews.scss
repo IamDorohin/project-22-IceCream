@@ -1,19 +1,6 @@
 .reviews {
     padding-top: 30px;
     padding-bottom: 30px;
-
-    &__caption--visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-    }
 }
 
 .container__reviews {
@@ -56,8 +43,8 @@
         background-repeat: no-repeat;
         position: absolute;
         z-index: -1;
-        top: 25px;
-        left: 16px;
+        top: 30px;
+        left: -1px;
         width: 100vw;
         height: 100vh;
 
@@ -86,6 +73,8 @@
         white-space: break-spaces;
         background-image: linear-gradient(to bottom, #fafafa 72px, transparent 0),
             repeating-linear-gradient(#e1e1e1, #e1e1e1 1px, #fafafa 1px, #fafafa 36px);
+
+            padding: 43px 10px 17px 10px;
 
         @include device(tablet) {
             font-size: 14px;
