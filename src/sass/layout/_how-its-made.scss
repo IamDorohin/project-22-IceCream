@@ -1,6 +1,6 @@
 .how .container {
   @include device('mobile-only') {
-    background-image: url('../images/Desktop/How-its-made/sectionbg.png');
+    background-image: url('../images/desktop/how-its-made/sectionbg.png');
     background-repeat: no-repeat;
     background-position: left 0px top 536px;
     background-size: contain;
@@ -15,7 +15,7 @@
   }
 
   @include device('desktop') {
-    background-image: url('../images/Desktop/How-its-made/sectionbg.png');
+    background-image: url('../images/desktop/how-its-made/sectionbg.png');
     background-repeat: no-repeat;
     background-position: left 0px top 142px;
     background-size: contain;
@@ -212,7 +212,7 @@
   display: inline-block;
   width: 10px;
   height: 10px;
-  background-image: url('../images/Vector.svg');
+  background-image: url('../images/vector.svg');
   background-repeat: no-repeat;
   background-size: contain;
 }
