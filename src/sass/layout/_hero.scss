@@ -1,11 +1,11 @@
 .hero {
     padding-top:150px;
     padding-bottom:160px;
-         @media screen  and (min-width: 767px) {
+         @media screen  and (min-width: 768px) {
             padding-top: 20px;
             padding-bottom: 16px;
          }
-         @media screen  and (min-width: 1199px) {
+         @media screen  and (min-width: 1200px) {
             padding-top: 60px;
             padding-bottom: 60px;
          }
@@ -24,12 +24,12 @@
         color:$secondary-text-color;
         letter-spacing:0.06em;
         margin-bottom: 20px;
-        @media screen  and (min-width: 767px) {
+        @media screen  and (min-width: 768px) {
             width:162px;
             font-size: 22px;
             line-height: 25px;
         }
-        @media screen  and (min-width: 1199px) {
+        @media screen  and (min-width: 1200px) {
             width: 277px;
             font-size: 38px;
             line-height: 44px;
@@ -43,7 +43,7 @@
         font-size:46px;
         line-height:46px;
         letter-spacing: 0.02em;
-          @media screen  and (min-width: 1199px) {
+          @media screen  and (min-width: 1200px) {
             font-size:58px;
           }
     }
@@ -84,7 +84,7 @@
                 background-color:$accent-color;
             }
         }
-        @media screen  and (min-width: 1199px) {
+        @media screen  and (min-width: 1200px) {
             font-size: 14px;
         }
 
@@ -126,24 +126,24 @@
         top: 62%;
         transform: translate(-50%,-50%);
         z-index: 1;
-        @media screen  and (min-width: 767px) {
+        @media screen  and (min-width: 768px) {
             width: 143px;
             left:44%;
         }
-        @media screen  and (min-width: 1199px) {
+        @media screen  and (min-width: 1200px) {
             width: 236px;
         }
 
     }
     &__milk{
         display:none;
-            @media screen  and (min-width: 767px) {
+            @media screen  and (min-width: 768px) {
                 display:flex;
                 align-items:center;
             }
     }
     &__img-milk{
-        @media screen  and (min-width: 1199px) {
+        @media screen  and (min-width: 1200px) {
             width: 213px;
         }
     }
@@ -186,10 +186,10 @@
 }
     &__img-girl{
         display:none;
-        @media screen  and (min-width: 767px) {
+        @media screen  and (min-width: 768px) {
             display:block;
         }
-        @media screen  and (min-width: 1199px) {
+        @media screen  and (min-width: 1200px) {
             width: 304px;
         }
 
@@ -197,7 +197,7 @@
     &__list-food-establishment {
         display:none;
         @extend %list;
-        @media screen  and (min-width: 767px) {
+        @media screen  and (min-width: 768px) {
             display:block;
             position:absolute;
             right: 4%;
@@ -217,7 +217,7 @@
         color:$secondary-text-color;
         position:relative;
         z-index:2;
-        @media screen  and (min-width: 1199px) {
+        @media screen  and (min-width: 1200px) {
             font-size: 14px;
             line-height: 18px;
         }
@@ -232,7 +232,7 @@
             background-color:$secondary-text-color;
             border-radius:50%;
             z-index:1;
-            @media screen  and (min-width: 1199px) {
+            @media screen  and (min-width: 1200px) {
                 width: 30px;
                 height: 30px;
             }
@@ -251,7 +251,7 @@
         color:$accent-color;
         position:relative;
         z-index: 2;
-        @media screen  and (min-width: 1199px) {
+        @media screen  and (min-width: 1200px) {
             font-size: 46px;
             line-height: 53px;
         }
