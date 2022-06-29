@@ -367,48 +367,50 @@ font-family: 'Titan One' , sans-serif;
 }
 
 .product-ice-cream__text{
-        @extend %product-text-styles
+        @extend %product-text-styles;
+        
         
 }
 .product-ice-coffe__text{
-        @extend %product-text-styles
+        @extend %product-text-styles;
 }
 
 .product-milk-shakes__text{
-        @extend %product-text-styles
+        @extend %product-text-styles;
         
 }
 
 .product-ice-cream__button{
 
         @extend %product-button-styles;
-        @include animation(background-color);
+        // @include animation(background-color);
         
-                    &:hover,
-                    &:focus {
-                        background-color: $white-button-hover;
-                    }
+        //             &:hover,
+        //             &:focus {
+        //                 background-color: $white-button-hover;
+        //             }
 }
 
 .product-ice-coffe__button {
         @extend %product-button-styles;
 
-        @include animation(background-color);
+        // @include animation(background-color);
         
-                &:hover,
-                &:focus {
-                        background-color: $white-button-hover;
-                }
+        //         &:hover,
+        //         &:focus {
+        //                 background-color: $white-button-hover;
+        //         }
+                                
 }
 
 .product-milk-shakes__button {
         @extend %product-button-styles;
-        @include animation(background-color);
+        // @include animation(background-color);
         
-                &:hover,
-                &:focus {
-                        background-color: $white-button-hover;
-                }
+        //         &:hover,
+        //         &:focus {
+        //                 background-color: $white-button-hover;
+        //         }
 }
 
 .product-ice-cream__text.is-open{
