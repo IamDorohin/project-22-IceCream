@@ -37,12 +37,19 @@ header{
 .navigation__link{
     font-size: 16px;
     line-height: 1.31;
+    font-weight: 700;
     color: $secondary-text-color;
+
     &:hover,
     &:focus {
         color: $accent-color;
     }
 }
+
+.navigation__link.current {
+    color: $accent-color;
+}
+
 .btn-modal-open.tablet-desktop{
     position: relative;
     @include device (mobile-only){

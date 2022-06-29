@@ -1,4 +1,4 @@
-.how .container {
+.how {
   @include device('mobile-only') {
     background-image: url('../images/desktop/how-its-made/sectionbg.png');
     background-repeat: no-repeat;
