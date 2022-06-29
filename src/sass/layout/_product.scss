@@ -379,6 +379,7 @@ font-family: 'Titan One' , sans-serif;
 .product-ice-cream__text{
         @extend %product-text-styles
 }
+
 .product-ice-coffe__text{
         @extend %product-text-styles
 }
@@ -388,7 +389,7 @@ font-family: 'Titan One' , sans-serif;
         
 }
 
-.product-ice-cream__button{
+.product__box-button{
         width: 40px;
         height: 40px;
         border-radius: 50%;

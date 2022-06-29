@@ -7,7 +7,7 @@
   background-image: linear-gradient(to bottom, #fff5f6 24%, #fff 24%);
 }
 
-.container__gallery {
+.gallery__container {
   @include device(not-desktop) {
     padding: 0;
   }
