@@ -42,10 +42,5 @@ font-weight: 700;
         transform: rotate(0deg);
         transition: transform 500ms ease-in-out;
 
-        @include animation(background-color);
-        
-            &:hover,
-            &:focus {
-                background-color: $white-button-hover;
-            }
+       
 }
