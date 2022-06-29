@@ -2,6 +2,8 @@
   const coffeBtnRef = document.querySelector("[coffe-button]");
   const coffeMenuRef = document.querySelector("[coffe-menu]");
   const icecoffeMenuRef = document.querySelector("[ice-coffe-menu]");
+  const forcreamMenuRef = document.querySelector("[forcreamcmenu]");
+  const forshakesMenuRef = document.querySelector("[forshakesmenu]");
 
   coffeBtnRef.addEventListener("click", () => {
     const expanded =
@@ -11,8 +13,9 @@
     coffeBtnRef.setAttribute("aria-expanded", !expanded);
 
       coffeMenuRef.classList.toggle("is-open");
-     icecoffeMenuRef.classList.toggle("before-mobile-is-open");
-    
+    icecoffeMenuRef.classList.toggle("before-mobile-is-open");
+    forcreamMenuRef.classList.toggle("forcream-is-open");
+    forshakesMenuRef.classList.toggle("forshakes-is-open");
 
   });
   
