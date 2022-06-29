@@ -45,6 +45,47 @@
   @media screen and (min-width: 1200px) {
     width: 306px;
   }
+
+  animation: fade-left-to-right 2s;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__subtitle--icon-first {
+    transition: transform 0.8s;
+  }
+  
+  .advantages__subtitle--icon-first:hover {
+    transform: translateX(20px) scale(1.2);
+    transition: transform 0.8s;
+  } 
+  .advantages__subtitle--icon-second {
+    transition: transform 0.8s;
+  }
+  
+  .advantages__subtitle--icon-second:hover {
+    transform: translateX(10px) scale(1.1);
+    transition: transform 0.8s;
+  } 
+  .advantages__subtitle--icon-third {
+    transition: transform 0.8s;
+  }
+  
+  .advantages__subtitle--icon-third:hover {
+    transform: translateX(20px) scale(1.2);
+    transition: transform 0.8s;
+  }
+}
+
+@keyframes fade-left-to-right {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .advantages__item:not(:last-child) {
