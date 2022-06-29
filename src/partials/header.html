@@ -40,11 +40,11 @@
 
       <!-- btn для відкриття бургер меню -->
       <button
-        class="burger-menu__btn-open js-open-menu"
+        class="header-menu-btn-open js-open-menu"
         aria-controls="burger-menu"
         aria-expanded="false"
       >
-        <svg class="burger-menu__icon-open" width="20" height="20">
+        <svg class="header-icon-open" width="20" height="20">
           <use href="./images/sprite.svg#icon-Burger-mob-tab"></use>
         </svg>
       </button>
@@ -59,11 +59,11 @@
       </button>
     </div>
 
-    <!-- burger-menu (Андрій - ти працюєш тільки з 1-ним дівом та кнопкою яка вище (class="burger-menu__btn-open") ) -->
+    <!-- burger-menu (Андрій - ти працюєш тільки з 1-ним дівом та кнопкою яка вище (class="header__menuBtn-open") ) -->
     <div class="burger-menu js-menu-container" id="burger-menu">
       <!-- btn для закриття mobile menu -->
-      <button class="burger-menu__btn-close js-close-menu">
-        <svg class="burger-menu__icon-close" width="14" height="14">
+      <button class="header-menu-btn-close js-close-menu">
+        <svg class="header-icon-close" width="14" height="14">
           <use href="./images/sprite.svg#icon-burger-close-mob-tab"></use>
         </svg>
       </button>
@@ -72,7 +72,7 @@
       <button class="btn-modal-open js-close" type="button">
         <span class="btn-modal-open__text">Buy now</span>
         <svg
-          class="contacts__arrow"
+          class="contacts-arrow"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
           width="8"
@@ -85,8 +85,8 @@
       </button>
       <!-- тут список якірних посилань -->
       <ul class="burger-menu__list">
-        <li class="burger-menu__item ">
-          <a class="burger-menu__link " href="#home">Home</a>
+        <li class="burger-menu__item">
+          <a class="burger-menu__link" href="#home">Home</a>
         </li>
         <li class="burger-menu__item">
           <a class="burger-menu__link" href="#how-it's-made">About us</a>
@@ -110,7 +110,9 @@
         </h1>
         <ul class="hero__list-btn">
           <li class="hero__item">
-            <a class="hero__link hero__link--accent" href="#products">Products</a>
+            <a class="hero__link hero__link--accent" href="#products"
+              >Products</a
+            >
           </li>
           <li class="hero__item">
             <a class="hero__link hero__link--base" href="#how-it's-made"
