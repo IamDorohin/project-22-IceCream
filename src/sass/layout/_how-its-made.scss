@@ -1,17 +1,9 @@
-.how .container {
+.how {
   @include device('mobile-only') {
     background-image: url('../images/desktop/how-its-made/sectionbg.png');
     background-repeat: no-repeat;
     background-position: left 0px top 536px;
     background-size: contain;
-
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  @include device('tablet') {
-    padding-left: 32px;
-    padding-right: 32px;
   }
 
   @include device('desktop') {
@@ -19,6 +11,18 @@
     background-repeat: no-repeat;
     background-position: left 0px top 142px;
     background-size: contain;
+  }
+}
+
+.how__container {
+  @include device('mobile-only') {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include device('tablet') {
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
@@ -151,7 +155,6 @@
   margin-bottom: 1em;
   margin-left: 0;
 
-  
   @include device('tablet') {
     font-size: 14px;
     line-height: 1.76;

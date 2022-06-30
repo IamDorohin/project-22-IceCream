@@ -1,85 +1,92 @@
-header{
-    background-color: #FFB8CA;
-    overflow: hidden;
+header {
+  background-color: #ffb8ca;
+  overflow: hidden;
 }
-.header{
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 8px;
+  @include device(tablet) {
+    padding-top: 32px;
+  }
+  @include device(desktop) {
+    padding-top: 37px;
+  }
+}
+.navigation {
+  z-index: 3;
+  @include device(desktop) {
+    margin-left: 128px;
+  }
+}
+.navigation__list {
+  @include device(not-desktop) {
+    display: none;
+  }
+  @include device(desktop) {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-    padding-top: 8px;
-    @include device (tablet){
-        padding-top: 32px;
-    }
-    @include device (desktop){
-        padding-top: 37px;
-    }
+  }
 }
-.navigation{
-    z-index: 3;
-    @include device (desktop){
-        margin-left: 128px;
-    }
+.navigation__item {
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
 }
-.navigation__list{
-    @include device (not-desktop){
-        display: none;
-    }
-    @include device (desktop){
-        display: flex;
-    }
+.navigation__link {
+  font-size: 16px;
+  line-height: 1.31;
+  font-weight: 700;
+  color: $secondary-text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
-.navigation__item{
-    &:not(:last-child){
-        margin-right: 35px;
-    }
+
+.navigation__link.current {
+  color: $accent-color;
 }
-.navigation__link{
-    font-size: 16px;
-    line-height: 1.31;
-    color: $secondary-text-color;
-    &:hover,
-    &:focus {
-        color: $accent-color;
-    }
-}
-.btn-modal-open.tablet-desktop{
-    position: relative;
-    @include device (mobile-only){
-        display: none;
-    }
-    @include device (tablet){
-        margin: 0px;
-        min-width: 160px;
-    }
-    @include device (desktop){
-        margin-left: 140px;
-    }
+
+.btn-modal-open.tablet-desktop {
+  position: relative;
+  @include device(mobile-only) {
+    display: none;
+  }
+  @include device(tablet) {
+    margin: 0px;
+    min-width: 160px;
+  }
+  @include device(desktop) {
+    margin-left: 140px;
+  }
 }
 .btn-modal-open.tablet-desktop::after {
-    content: '';
-    position: absolute;
-    bottom: 16px;
-    left: 125px;
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-image: url('../images/vector.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
+  content: '';
+  position: absolute;
+  bottom: 16px;
+  left: 125px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-image: url('../images/vector.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header-menu-btn-open {
+  margin-left: auto;
+  padding: 0px;
+  border: 0px;
+  background-color: transparent;
+
+  fill: $accent-color;
+  @include device(tablet) {
+    margin-right: 32px;
   }
-
-.burger-menu__btn-open{
-    margin-left: auto;
-    padding: 0px;
-    border: 0px;
-    background-color: transparent;
-
-    fill: $accent-color;
-    @include device (tablet){
-        margin-right: 32px;
-    }
-    @include device (desktop){
-        display: none;
-    }
+  @include device(desktop) {
+    display: none;
+  }
 }
