@@ -55,7 +55,8 @@
 
     @include animation(background-color);
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background-color: $accent-color;
     }
   }
@@ -78,7 +79,8 @@
     color: #d41443;
     @include animation(color);
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: $crimson-button-hover;
     }
   }
@@ -114,6 +116,7 @@
     }
     &__wrap-title {
       width: 340px;
+      margin: 0;
     }
     &__title {
       font-size: 26px;
