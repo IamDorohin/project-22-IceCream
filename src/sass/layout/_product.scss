@@ -304,7 +304,7 @@ border-radius: 24px;
         @media screen and (min-width: 768px) and (max-width: 1199px) {
                
                 max-width: 224px;
-                
+                min-width: 224px;
                 flex-basis: calc((100% - 6 * 8px) / 3);
                         margin: 8px;
                         padding-top: 118px;
@@ -413,160 +413,226 @@ font-family: 'Titan One' , sans-serif;
         //         }
 }
 
-.product-ice-cream__text.is-open{
-       
-        @media screen and (max-width: 479px) {
-        transform:  scale(1.2);
-        transition: transform 500ms ease-in-out;
-        color: orangered;
-        }
-     
-                                  @media screen and (min-width: 768px) and (max-width: 1199px) {
-                                        //   transform: scale(1.3);
-                                          transition: transform 500ms ease-in-out;
-                                          color: #FFFFFF;
-                                        
-                                  }
-                
-                                  @media screen and (min-width: 1200px) {
-                                          transform: scale(1.2);
-                                          transition: transform 500ms ease-in-out;
-                                          color: #FFFFFF;
-                                  }
+
+
+
+.product__box-overlay{
+overflow: hidden;
+        position: relative;
+// @media screen and (min-width: 768px) and (max-width: 1199px) {
+// min-height: 200px;
+// }
+        
+}
+.product-ice-cream__description{
+       @extend %product-discription-styles;
+           color: rgb(241, 99, 47);
+}
+.product-ice-coffe__description{
+        @extend %product-discription-styles;
+            color: rgb(32, 122, 224);
+}
+.product-milk-shakes__description{
+        @extend %product-discription-styles;
+          color: rgb(87, 29, 29);
 }
 
-.product-ice-cream.mobile-is-open {
-        @media screen and (min-width: 480px) and (max-width: 767px) {
+.product-ice-cream__description.is-open{
+transform: translateY(0%);
+        background-color: #FFB8CA;
+}
+.product-ice-coffe__description.is-open{
+        
+transform: translateY(0%);
+background-color: #F0D1A5;
+}
+.product-milk-shakes__description.is-open{
+transform: translateY(0%);
+background-color: #C2E297;
+}
 
-                transform: scale(1.6);
-                transition: transform 500ms ease-in-out;
 
-        }
-                                  @media screen and (min-width: 768px) and (max-width: 1199px) {
-                
-                                          transform: translate(100%, 0%) scale(1.4);
-                                          transition: transform 500ms ease-in-out;
-                                        z-index: 1;
-                                  }
-                
-                                  @media screen and (min-width: 1200px) {
-                                          transform: translate(100%, 0%) scale(1.2);
-                                          transition: transform 500ms ease-in-out;
-                                        z-index: 1;
-                                  }
+.product-ice-cream__text.mobile-is-open{
+transform: translateX(-100%);
+}
+.product-ice-coffe__text.before-mobile-is-open{
+
+transform: translateY(-100%);
+}
+.product-milk-shakes__text.befmob-is-open {
+        transform: translateX(100%);
 }
 
 .product-ice-cream__button.is-open{
-        
-        transform: rotate(270deg) ;
-        transition: transform 500ms ease-in-out;
-        @media screen and (min-width: 480px){
-        transform: rotate(270deg) translateX(70%);
-        }
-        
-}
-
-.product-ice-coffe__text.before-mobile-is-open {
-        
-        @media screen and (max-width: 479px) {
-                        transform: scale(1.2);
-                        transition: transform 500ms ease-in-out;
-                        color: rgb(32, 122, 224);
-                }
-
-                                 @media screen and (min-width: 768px) and (max-width: 1199px){
-                                        //  transform: scale(1.4);
-                                         transition: transform 500ms ease-in-out;
-                                         color: #FFFFFF;
-                                 }
-                                  @media screen and (min-width: 1200px) {
-                                 transform: scale(1.2);
-                          transition: transform 500ms ease-in-out;
-                        color: #FFFFFF;
-                                                                  }
-}
-
-
-.product-ice-coffe.is-open {
-        @media screen and (min-width: 480px) and (max-width: 767px){
-        
-                        transform: scale(1.6);
-                        transition: transform 500ms ease-in-out;
-                }
-        @media screen and (min-width: 768px) and (max-width: 1199px)
-        {
-
-                transform: scale(1.4);
-                transition: transform 500ms ease-in-out;
-                z-index: 1;
-                
-        }
-                @media screen and (min-width: 1200px) {
-                        transform: scale(1.2);
-                                transition: transform 500ms ease-in-out;
-                                z-index: 1;
-}
+transform: rotate(270deg);
+ transition: transform 500ms ease-in-out;
 }
 .product-ice-coffe__button.is-open {
+
+          transform: rotate(270deg) ;
+           transition: transform 500ms ease-in-out;
+        }
+
+.product-milk-shakes__button.is-open{
+        transform: rotate(270deg);
+          transition: transform 500ms ease-in-out;
+}
+// .product-ice-cream__text.is-open{
        
-        transform: rotate(270deg);
-                transition: transform 500ms ease-in-out;
-        
-                @media screen and (min-width: 480px) {
-                        transform: rotate(270deg) translateX(70%);
-                }
-
-        
-}
-
-.product-milk-shakes__text.befmob-is-open {
-        
-        @media screen and (max-width: 479px) {
-                        transform: scale(1.2);
-                        transition: transform 500ms ease-in-out;
-                        color: brown;
-                }
-
-                                 @media screen and (min-width: 768px) and (max-width: 1199px) {
-                                        //  transform: scale(1.3);
-                                         transition: transform 500ms ease-in-out;
-                                         color: #FFFFFF;
-                                 }
+//         @media screen and (max-width: 479px) {
+//         transform:  scale(1.2);
+//         transition: transform 500ms ease-in-out;
+//         color: orangered;
+//         }
+     
+//                                   @media screen and (min-width: 768px) and (max-width: 1199px) {
+//                                         //   transform: scale(1.3);
+//                                           transition: transform 500ms ease-in-out;
+//                                           color: #FFFFFF;
+                                        
+//                                   }
                 
-                                 @media screen and (min-width: 1200px) {
-                                         transform: scale(1.2);
-                                         transition: transform 500ms ease-in-out;
-                                         color: #FFFFFF;
-                                 }
-}
+//                                   @media screen and (min-width: 1200px) {
+//                                           transform: scale(1.2);
+//                                           transition: transform 500ms ease-in-out;
+//                                           color: #FFFFFF;
+//                                   }
+// }
 
-.product-milk-shakes__button.is-open {
-        
-        transform: rotate(270deg);
-                transition: transform 500ms ease-in-out;
-        
-                @media screen and (min-width: 480px) {
-                        transform: rotate(270deg) translateX(70%);
-                }
+// .product-ice-cream.mobile-is-open {
+//         @media screen and (min-width: 480px) and (max-width: 767px) {
 
-}
+//                 transform: scale(1.6);
+//                 transition: transform 500ms ease-in-out;
 
-.product-milk-shakes.is-open{
+//         }
+//                                   @media screen and (min-width: 768px) and (max-width: 1199px) {
+                
+//                                           transform:  scale(1.4);
+//                                           transition: transform 500ms ease-in-out;
+//                                         // z-index: 1;
+//                                   }
+                
+//                                   @media screen and (min-width: 1200px) {
+//                                           transform:  scale(1.2);
+//                                           transition: transform 500ms ease-in-out;
+//                                         // z-index: 1;
+//                                   }
+// }
 
-        @media screen and (min-width: 480px) and (max-width: 767px) {
+// .product-ice-cream__button.is-open{
         
-                        transform: scale(1.6);
-                        transition: transform 500ms ease-in-out;
-                }
-        @media screen and (min-width: 768px) and (max-width: 1199px){
+//         transform: rotate(270deg) ;
+//         transition: transform 500ms ease-in-out;
+//         @media screen and (min-width: 480px){
+//         transform: rotate(270deg) translateX(70%);
+//         }
         
-                        transform: translate(-100%, 0%) scale(1.4);
-                        transition: transform 500ms ease-in-out;
-                }
-                              @media screen and (min-width: 1200px) {
-                                      transform: translate(-100%, 0%) scale(1.2);
-                                      transition: transform 500ms ease-in-out;
-                               }
+// }
+
+// .product-ice-coffe__text.before-mobile-is-open {
+        
+//         @media screen and (max-width: 479px) {
+//                         transform: scale(1.2);
+//                         transition: transform 500ms ease-in-out;
+//                         color: rgb(32, 122, 224);
+//                 }
+
+//                                  @media screen and (min-width: 768px) and (max-width: 1199px){
+//                                         //  transform: scale(1.4);
+//                                          transition: transform 500ms ease-in-out;
+//                                          color: #FFFFFF;
+//                                  }
+//                                   @media screen and (min-width: 1200px) {
+//                                  transform: scale(1.2);
+//                           transition: transform 500ms ease-in-out;
+//                         color: #FFFFFF;
+//                                                                   }
+// }
+
+
+// .product-ice-coffe.is-open {
+//         @media screen and (min-width: 480px) and (max-width: 767px){
+        
+//                         transform: scale(1.6);
+//                         transition: transform 500ms ease-in-out;
+//                 }
+//         @media screen and (min-width: 768px) and (max-width: 1199px)
+//         {
+
+//                 transform: scale(1.4);
+//                 transition: transform 500ms ease-in-out;
+//                 // z-index: 1;
+                
+//         }
+//                 @media screen and (min-width: 1200px) {
+//                         transform: scale(1.2);
+//                                 transition: transform 500ms ease-in-out;
+//                                 // z-index: 1;
+// }
+// }
+// .product-ice-coffe__button.is-open {
+       
+//         transform: rotate(270deg);
+//                 transition: transform 500ms ease-in-out;
+        
+//                 @media screen and (min-width: 480px) {
+//                         transform: rotate(270deg) translateX(70%);
+//                 }
+
+        
+// }
+
+// .product-milk-shakes__text.befmob-is-open {
+        
+//         @media screen and (max-width: 479px) {
+//                         transform: scale(1.2);
+//                         transition: transform 500ms ease-in-out;
+//                         color: brown;
+//                 }
+
+//                                  @media screen and (min-width: 768px) and (max-width: 1199px) {
+//                                         //  transform: scale(1.3);
+//                                          transition: transform 500ms ease-in-out;
+//                                          color: #FFFFFF;
+//                                  }
+                
+//                                  @media screen and (min-width: 1200px) {
+//                                          transform: scale(1.2);
+//                                          transition: transform 500ms ease-in-out;
+//                                          color: #FFFFFF;
+//                                  }
+// }
+
+// .product-milk-shakes__button.is-open {
+        
+//         transform: rotate(270deg);
+//                 transition: transform 500ms ease-in-out;
+        
+//                 @media screen and (min-width: 480px) {
+//                         transform: rotate(270deg) translateX(70%);
+//                 }
+
+// }
+
+// .product-milk-shakes.is-open{
+
+//         @media screen and (min-width: 480px) and (max-width: 767px) {
+        
+//                         transform: scale(1.6);
+//                         transition: transform 500ms ease-in-out;
+//                 }
+//         @media screen and (min-width: 768px) and (max-width: 1199px){
+        
+//                         transform:  scale(1.4);
+//                         transition: transform 500ms ease-in-out;
+//                 }
+//                               @media screen and (min-width: 1200px) {
+//                                       transform:  scale(1.2);
+//                                       transition: transform 500ms ease-in-out;
+//                                }
+
+//   }
         // animation: move 10000ms ease-in-out 1000ms ;
                      
         //         animation-fill-mode: none;
@@ -591,7 +657,7 @@ font-family: 'Titan One' , sans-serif;
 
                                
               
-        }
+      
 
 
 // .product-milk-shakes.is-open .product-ice-cream{
@@ -604,34 +670,34 @@ font-family: 'Titan One' , sans-serif;
         
 // }
 
-       .product-ice-cream.foric-is-open{
-        @media screen and (min-width: 768px) {
+//        .product-ice-cream.foric-is-open{
+//         @media screen and (min-width: 768px) {
         
-                        transform: translate(100%, 0%);
-                        transition: transform 500ms ease-in-out;
-                                }
-       }
+//                         transform: translate(100%, 0%);
+//                         transition: transform 500ms ease-in-out;
+//                                 }
+//        }
 
-.product-milk-shakes.formi-is-open {
-        @media screen and (min-width: 768px) {
+// .product-milk-shakes.formi-is-open {
+//         @media screen and (min-width: 768px) {
 
-                transform: translate(-100%, 0%);
-                transition: transform 500ms ease-in-out;
-        }
-}
+//                 transform: translate(-100%, 0%);
+//                 transition: transform 500ms ease-in-out;
+//         }
+// }
 
-.product-milk-shakes.forshakes-is-open {
-        @media screen and (min-width: 768px) {
+// .product-milk-shakes.forshakes-is-open {
+//         @media screen and (min-width: 768px) {
 
-                transform: translate(-100%, 0%);
-                transition: transform 500ms ease-in-out;
-        }
-}
+//                 transform: translate(-100%, 0%);
+//                 transition: transform 500ms ease-in-out;
+//         }
+// }
 
-.product-ice-cream.forcream-is-open {
-        @media screen and (min-width: 768px) {
+// .product-ice-cream.forcream-is-open {
+//         @media screen and (min-width: 768px) {
 
-                transform: translate(100%, 0%);
-                transition: transform 500ms ease-in-out;
-        }
-}
+//                 transform: translate(100%, 0%);
+//                 transition: transform 500ms ease-in-out;
+//         }
+// }
