@@ -6,12 +6,23 @@
       <li class="product-ice-cream">
         <div class="product-ice-cream__position product__box">
           <h3 class="product__box-title">ice cream</h3>
-          <p class="product-ice-cream__text">
-            This 100% natural whole milk ice cream topped with ripe Strawberries
-            will melt sweetly in your mouth and leave you with an unforgettable
-            experience.
-          </p>
-          <button class="product__box-button" type="button">
+          <div class="product__box-overlay">
+            <p class="product-ice-cream__text" second-menu>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+            <p class="product-ice-cream__description" data-menu>
+              This 100% natural whole milk ice cream topped with ripe
+              Strawberries will melt sweetly in your mouth and leave you with an
+              unforgettable experience.
+            </p>
+          </div>
+          <button
+            class="product-ice-cream__button"
+            type="button"
+            aria-controls="ice-cream"
+            data-menu-button
+          >
             &#10140;
           </button>
         </div>
@@ -19,12 +30,23 @@
       <li class="product-ice-coffe">
         <div class="product-ice-coffe__position product__box">
           <h3 class="product__box-title">ice coffee</h3>
-          <p class="product-ice-coffe__text">
-            Love coffee? Ice coffee is a cold, refreshing and tonic drink with a
-            pronounced coffee-creamy taste. This is a great choice for a hot
-            summer day.
-          </p>
-          <button class="product__box-button" type="button">
+          <div class="product__box-overlay">
+            <p class="product-ice-coffe__text" ice-coffe-menu>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+            <p class="product-ice-coffe__description" coffe-menu>
+              Love coffee? Ice coffee is a cold, refreshing and tonic drink with
+              a pronounced coffee-creamy taste. This is a great choice for a hot
+              summer day.
+            </p>
+          </div>
+          <button
+            class="product-ice-coffe__button"
+            type="button"
+            aria-controls="ice-coffe"
+            coffe-button
+          >
             &#10140;
           </button>
         </div>
@@ -32,12 +54,24 @@
       <li class="product-milk-shakes">
         <div class="product-milk-shakes__position product__box">
           <h3 class="product__box-title">milkshakes</h3>
-          <p class="product-milk-shakes__text">
-            Taste the unique taste of a refreshing milk chocolate treat that you
-            will immediately fall in love with. Milkshakes are a godsend for the
-            sweet tooth.
-          </p>
-          <button class="product__box-button" type="button">
+          <div class="product__box-overlay">
+            <p class="product-milk-shakes__text" milkmenu>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+            <p class="product-milk-shakes__description" milkshakes-menu>
+              Taste the unique taste of a refreshing milk chocolate treat that
+              you will immediately fall in love with. Milkshakes are a godsend
+              for the sweet tooth.
+            </p>
+          </div>
+
+          <button
+            class="product-milk-shakes__button"
+            type="button"
+            aria-controls="milk-shakes"
+            milkshakes-menu-button
+          >
             &#10140;
           </button>
         </div>
@@ -45,3 +79,6 @@
     </ul>
   </div>
 </section>
+<!-- <script src="../js/product__ice-cream.js"></script>
+<script src="../js/product__ice-coffe.js"></script>
+<script src="../js/product__milkshakes.js"></script> -->

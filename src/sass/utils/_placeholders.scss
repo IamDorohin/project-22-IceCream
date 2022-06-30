@@ -12,7 +12,7 @@
 %product-text-styles{
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.9;
 
     text-align: center;
     letter-spacing: 0.04em;
@@ -20,9 +20,58 @@
     color: #FFFFFF;
 
     margin-bottom: 32px;
-
+    transition: transform 500ms ease-in-out;
+    
+    
     @media screen and (min-width: 1200px) {
             margin-bottom: 60px;
             font-size: 16px;
         }
 }
+
+%product-discription-styles{
+position: absolute;
+    top: 0;
+    left: 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    margin-bottom: 32px;
+    transition: transform 500ms ease-in-out;
+
+    @media screen and (max-width: 767px) {
+        transform: translateY(185%);
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        transform: translateY(170%);
+    }
+
+    @media screen and (min-width: 1200px) {
+        transform: translateY(210%);
+        font-size: 16px;
+    }
+}
+%product-button-styles{
+    width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: red;
+        border-color: #FFFFFF;
+        background-color: #FFFFFF;
+        border: 0;
+        cursor: pointer;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+
+        transform: rotate(0deg);
+        transition: transform 500ms ease-in-out;
+   
+}
+
