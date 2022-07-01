@@ -1,7 +1,7 @@
 (() => {
-  const coffeBtnRef = document.querySelector("[coffe-button]");
-  const coffeMenuRef = document.querySelector("[coffe-menu]");
-  const icecoffeMenuRef = document.querySelector("[ice-coffe-menu]");
+  const coffeBtnRef = document.querySelector(".coffe-button");
+  const coffeMenuRef = document.querySelector(".coffe-menu");
+  const icecoffeMenuRef = document.querySelector(".ice-coffe-menu");
   const forcreamMenuRef = document.querySelector("[forcreamcmenu]");
   const forshakesMenuRef = document.querySelector("[forshakesmenu]");
 
@@ -14,8 +14,6 @@
 
       coffeMenuRef.classList.toggle("is-open");
     icecoffeMenuRef.classList.toggle("before-mobile-is-open");
-    forcreamMenuRef.classList.toggle("forcream-is-open");
-    forshakesMenuRef.classList.toggle("forshakes-is-open");
 
   });
   

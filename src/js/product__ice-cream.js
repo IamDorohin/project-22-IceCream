@@ -1,7 +1,7 @@
 (() => {
   const menuBtnRef = document.querySelector("[data-menu-button]");
   const mobileMenuRef = document.querySelector("[data-menu]");
-  const secondMenuRef = document.querySelector("[second-menu]");
+  const secondMenuRef = document.querySelector('.second-menu');
    const formiMenuRef = document.querySelector("[formimenu]");
 
   menuBtnRef.addEventListener("click", () => {
@@ -13,7 +13,6 @@
 
     mobileMenuRef.classList.toggle("is-open");
     secondMenuRef.classList.toggle("mobile-is-open");
-    formiMenuRef.classList.toggle("formi-is-open");
      
   });
 })();
